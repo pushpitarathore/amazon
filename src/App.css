@@ -1,34 +1,85 @@
 header{
   border:1px dashed red;
-  background:#131921
+  background:#131921;
 }
 .p_header_top{
-  height:60px;
+  height:55px;
   border:1px dashed green;
+  z-index: 10000;
+  background:#131921;
+}
+.p_header_top > button:hover{
+  border:1px solid #fff;
 }
 .p_header_bottom{
   height:39px;
   border:1px dashed purple;
 }
+.p_header_bottom a {
+  /* TRBL */
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size:15px;
+  color:#fff;
+  margin-top:3px;
+  font-weight: bold;
+
+}
+.p_header_bottom a:hover{
+  outline:1px solid #fff;
+  color:#fff;
+}
+.p_header_bottom a:active,.p_header_bottom a:focus{
+  color:#fff;
+}
 .p_main{
- height:4818px;
- border:1px dashed blue;
+  height:5453px;
+ border:1px dashed black;
  background:#eaeded
 }
 .p_main1{
   height: 600px;
   border: 1px dashed orange;
 }
-.p_main2{
-  height:422px;
-  border:1px dashed #000;
-  background-color:rgba(0,0,0,0.5);
-  z-index: 3;
-  top: 250px;
-  left:0;
+.p_main_bottom{
+
+  height: 5202px;
+  border:1px dashed blue;
+  background:rosybrown;
+  top:250px;
+  left:20px;
+  width:97%; 
+}
+.p_main_bottom_1{
+  border:1px dashed black;
+  background:red;
+}
+.p_main_bottom_1 > div{
+height:423px;
+border:1px dashed black;
+}
+.p_main_bottom_2 >div{
+  height:421px;
+  border:1px dashed blue;
+}
+.p_main_bottom_3{
+  height:364px;
+  border:1px dashed black;
+}
+.imgcont{
+  height:300px;
+  border:1px dashed green;
+}
+.imgcont >div {
+  border:1px dashed black;
+}
+#carouselExampleControls2 .p_cc{
+  background:orange;
+  width:3%;
+  height: 30%;
+  top:145px;
 }
 footer{
-  height:227px;
+  height:702px;
   border:1px dashed green;
-  background:#131a22 ;
 }
