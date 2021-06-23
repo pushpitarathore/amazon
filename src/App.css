@@ -3,14 +3,27 @@ header{
   background:#131921;
 }
 .p_header_top{
-  height:55px;
+  height:60px;
   border:1px dashed green;
   z-index: 10000;
   background:#131921;
 }
 .p_header_top > button:hover{
-  border:1px solid #fff;
+  outline:1px solid #fff;
 }
+.mhcolor{
+  background:#232f3e ;
+}
+.headermodal{
+  transition: all 0.3 ease-out;
+}
+.l934{
+  left:-934px !important;
+}
+.l433{
+  left:-433px !important;
+}
+
 .p_header_bottom{
   height:39px;
   border:1px dashed purple;
@@ -31,6 +44,9 @@ header{
 }
 .p_header_bottom a:active,.p_header_bottom a:focus{
   color:#fff;
+}
+.tbdr{
+  border:1px dashed #000;
 }
 .p_main{
   height:5453px;
@@ -58,6 +74,28 @@ header{
 height:423px;
 border:1px dashed black;
 }
+.p_mainbox1{
+height:98%;
+width:98%;
+background:blue;
+}
+.p_mainbox1_inner >div{
+  height:90%;
+}
+.p_mainbox1_inner .col-6{
+  height:140px ;
+ 
+  }
+  .p_mainbox1_inner .row a{
+    font-size: 12px;
+  }
+
+.p_mainbox1_inner a{
+  text-decoration: none;
+  
+}
+
+
 .p_main_bottom_2 >div{
   height:421px;
   border:1px dashed blue;

@@ -1,9 +1,12 @@
 
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt, faBars } from '@fortawesome/free-solid-svg-icons'
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import { faMapMarkerAlt, faBars, faCartPlus, faUser, faChevronRight,faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import Flag from 'react-world-flags';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+
 
 /**
 * @author
@@ -13,80 +16,185 @@ import PropTypes from 'prop-types'
 class App extends Component {
   //1. properties
   state = {
-    x:''
+    x: '',
+    y: 'headermodal l934'
   }
   //2.constructor
-    constructor(props){
-      super(props);
-    }
-  //3. 
-  handleScroll=()=>{
+  constructor(props) {
+    super(props);
+  }
+
+  //3.methods
+  //create only by using fat arrow
+  handleScroll = () => {
     console.log("okay" + window.scrollY);
-  //if scroll amout is greater than 80px then we will fix the header top
-  if(window.scrollY>=60){
-    //we will add "position-fixed start-0 top-0" this value
-    this.setState({x:'position-fixed start-0 top-0'});
-  }else{
-     //we will remove "position-fixed start-0 top-0" this value
-     this.setState({x:''});
+    if (window.scrollY >= 60) {
+      this.setState({ x: 'position-fixed start-0 end-0' })
+    } else {
+      this.setState({ x: ' ' })
+    }
   }
+  handleModal = () => {
+    this.setState({ y: 'l433' });
   }
-  componentDidMount(){
-    //this method will call when page/component is loaded
-    window.addEventListener('scroll',this.handleScroll);
+  closeModal = () => {
+    this.setState({ y: 'l934' });
   }
+  componentDidMount() {
+    //this method will be called when component is renderd
+    window.addEventListener('scroll', this.handleScroll);
+    // console.log('page is loaded');
+  }
+
   render() {
     return (
-      
-      
       <div>
+        <div className="modal " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div className={'modal-dialog modal-dialog-scrollable headermodal ' + this.state.y}>
+            <div className="modal-content">
+              <div className="modal-header text-white mhcolor" >
+                <h5 className="modal-title" id="staticBackdropLabel"><FontAwesomeIcon className="me-2" icon={faUser} />Hello, Sign in</h5>
+                <button onClick={this.closeModal} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                <h3 className="fw-bolder">Trending</h3>
+                <ul className="nav flex-column">
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Best Sellers</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">New Releases</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link border-bottom" href="#">Movers &amp; Shakers</a>
+                  </li>
+                </ul>
+                <h3 className="fw-bolder">Digital Content And Devices</h3>
+                <ul className="nav flex-column">
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Echo &amp; Alexa<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Fire Tv<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Kindle E-Readers &amp; E-Books<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Audible Audiobooks<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Amazon Prime Vedio<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link border-bottom " href="#">Amazon Prime Music<FontAwesomeIcon className="float-end" icon={faChevronRight} />c</a>
+                  </li>
+                </ul>
+
+                <h3 className="fw-bolder">Shop By Department </h3>
+                <ul className="nav flex-column">
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Mobiles,Computers<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">TV,Applinces,Electronics<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Men's Fashion<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Women's Fashion<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">See All<FontAwesomeIcon className="" icon={faChevronUp} /></a>
+                  </li>
+
+                </ul>
+                <h3 className="fw-bolder">Programs &amp; Features</h3>
+                <ul className="nav flex-column">
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Gift Card &amp; Mobile Reacharges<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Flight Tickets</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Amazon Assitant</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link border-bottom " href="#">Full Store Directory</a>
+                  </li>
+                </ul>
+                <h3 className="fw-bolder">Help &amp; Settings</h3>
+                <ul className="nav flex-column">
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Your Account</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">Coustmer Service</a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="#">Sign In</a>
+                  </li>
+
+                </ul>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
         <header>
-          <div className={'p_header_top p-1 w-100 ' + this.state.x } >
-            <button className="h-100 me-1 btn" style={{ 'width': '10%' }}>
+          <div className={'p_header_top p-1 w-100 ' + this.state.x}>
+            <button className="h-100 me-1 btn" style={{ 'width': '9%' }}>
 
             </button>
-            <button className="h-100 fs-6 text-white me-2 p-0 btn" style={{ 'width': '13%' }}>
+            <button className="h-100 fs-6 text-white me-1 p-0 btn" style={{ 'width': '13%' }}>
               Deliver to pushpita
 
               <span className="fw-bold d-block"><span className="p_city"><FontAwesomeIcon icon={faMapMarkerAlt} /> Neemuch</span><span className="p_pincode">458441</span></span>
             </button>
-            <form className="hform lh-1 me-1 bg-white d-inline-block h-75" style={{ 'width': '45%' }} >C</form>
-            <button className="h-100 me-1 btn" style={{ 'width': '5%' }}>D</button>
-            <button className="h-100 me-1 btn" style={{ 'width': '10%' }}>E</button>
-            <button className="h-100 me-1 btn " style={{ 'width': '7%' }}>F</button>
-            <button className="h-100 me-1 btn " style={{ 'width': '7%' }}>G</button>
+            <form className="hform  me-1 bg-white  rounded-2 d-inline-block p-1  h-75" style={{ 'width': '44%' }} >C</form>
+            <button className="h-100 me-1 btn" style={{ 'width': '4%' }}><Flag code={'in'} />D</button>
+            <button className="h-100 me-1 btn text-white" style={{ 'width': '12%' }}>Hello,Sign in
+              <div className="fw-bold">Account &amp; Lists</div>
+            </button>
+            <button className="h-100 me-1 btn text-white fs-6 " style={{ 'width': '8%' }}>Return
+              <div className="fw-bold">&amp; orders</div></button>
+            <button className="h-100 me-1 btn fs-6 text-white fw-bold " style={{ 'width': '7%' }}><FontAwesomeIcon className="fs-3" icon={faCartPlus} />Cart</button>
           </div>
           <div className="p_header_bottom">
-            <ul class=" ms-2 nav float-start">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#"><FontAwesomeIcon className="fs-5" icon={faBars} /> All</a>
+            <ul className=" ms-2 nav float-start">
+              <li className="nav-item">
+                <button onClick={this.handleModal} type="button" className="btn m-1 p-0 " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <a className="nav-link text-white m-1 fs-6 p-0" href="#"><FontAwesomeIcon className="fs-5 me-1" icon={faBars} /> All</a></button>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Best Sellers</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Best Sellers</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Mobiles</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Mobiles</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >prime</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#" >prime</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Fasion</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#" >Fasion</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Electronics</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#" >Electronics</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >New Realeses</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#" >New Realeses</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Customer Service</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#" >Customer Service</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Amazon Pay</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#" >Amazon Pay</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Computers</a>
+              <li className="nav-item">
+                <a className="nav-link" href="#" >Computers</a>
               </li>
             </ul>
             <ul>
@@ -94,11 +202,11 @@ class App extends Component {
                 <img className="img.fluid float-end" src="./images/slider/hbanner.jpg" />
               </a>
             </ul>
-            <ul class="nav  d-none float-start">
-              <li class="nav-item">
-                <a class="nav-link" href="#" >Home &amp; Kitchen</a>
+            <ul className="nav  d-none float-start">
+              <li className="nav-item">
+                <a className="nav-link" href="#" >Home &amp; Kitchen</a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a className="nav-link" href="#" >Today's Deals</a>
               </li>
               <li className="nav-item">
@@ -159,10 +267,73 @@ class App extends Component {
           </div>
           <div className="ml-1 position-absolute  p_main_bottom  ">
             <div className="p_main_bottom_1 m-0 mb-3 row">
-              <div className="col">A</div>
-              <div className="col">B</div>
-              <div className="col">C</div>
-              <div className="col">D</div>
+              <div className="col p-2">
+                <div className="p_mainbox1 p-3 ">
+                  <div className="p_mainbox1_inner w-100 h-100 bg-danger">
+                    <div className="w-100 bg-warning">
+                      <h5>Top picks for your home</h5>
+                      <div className="row  m-0 ">
+                        <div className="col-6 tbdr p-0">
+                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/1.jpg" />
+                            AC's
+                          </a>
+
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/2.jpg" />
+                            Refrigerators
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/3.jpg" />
+                            Microwaves
+                          </a>
+
+
+                        </div>
+
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/4.jpg" />
+                            Washing Machines
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" className="btn btn-link">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col p-2">
+                <div className="p_mainbox1 p-3 ">
+                  <div className="p_mainbox1_inner w-100 h-100 bg-danger">
+                    <div className="w-100 bg-warning"></div>
+                    <a href="#" className="btn btn-link">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col p-2">
+                <div className="p_mainbox1 p-3 ">
+                  <div className="p_mainbox1_inner w-100 h-100 bg-danger">
+                    <div className="w-100 bg-warning"></div>
+                    <a href="#" className="btn btn-link">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="row ">
+                  <div className="col-12 tbdr bg-white mb-4 p-3" style={{ 'height': 150 + 'px' }}>
+                    <h4 className="p-2">Sign in for your best experience</h4>
+                    <button className="btn btn-warning w-100 rounded-1 border border-secondary">Sign in securely</button>
+                  </div>
+                  <div className="col-12 p-0  tbdr bg-white " style={{ 'height': 254 + 'px' }}>
+                    <img className="img-fluid w-100 h-100" src="./images/main_images/5.jpg" />
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="p_main_bottom_2 row m-0 mb-3">
               <div className="col-6">A</div>
