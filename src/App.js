@@ -51,49 +51,125 @@ class App extends Component {
     return (
 
       <div>
-        <div className="modal show p_ht_countrydd" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop1Label" aria-hidden="true">
+        <div class="modal p_ht_signin_model " id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-center p_signin_model">
+                <button className="btn btn-warning w-50">Sign in</button>
+                <p className="fs-6">New Customer<a className="btn btn-link" href="#">Start here.</a></p>
+              </div>
+              <div class="modal-body">
+                <div className="row m-0">
+                  <div className="col border-end ">
+                    <h5>Your Lists</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link " href="#">Create Wish lists</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Find a Wish list</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Wish from Any Website</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Babt Wish list</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Discover Your Style</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Explore Showroom</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col ">
+                    <ul class="nav flex-column">
+                      <h5>Your Account</h5>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#">Your Account</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Your Wish list</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Your Recommendations</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Your Prime Membership</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Your Prime Vedio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Your Subscribe &amp; Saved Item</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Membership &amp; Subscriptions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Your Amazon Business Account</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Your Seller Account</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="#" >Manage Your Content &amp; Devices</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div className="modal show p_ht_countrydd" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdrop1Label" aria-hidden="true">
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title" id="staticBackdrop1Label">
-                <div className="form-check">
-                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                  <label className="form-check-label" for="flexRadioDefault1">
-                    English-EN
-                  </label>
-                </div>
+                  <div className="form-check">
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                    <label className="form-check-label" u="flexRadioDefault1">
+                      English-EN
+                    </label>
+                  </div>
                 </h5>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div className="modal-body">
-                <div className="form-check">
-                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                  <label className="form-check-label" for="flexRadioDefault1">
-                    English-EN
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                  <label className="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                  <label className="form-check-label" for="flexRadioDefault1">
-                    English-EN
-                  </label>
-                </div>
-                <div className="form-check">
-                  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                  <label className="form-check-label" for="flexRadioDefault1">
-                    English-EN
-                  </label>
-                </div>
+                <form>
+                  <div className="form-check">
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                    <label className="form-check-label" for="flexRadioDefault1">
+                      English-EN
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                    <label className="form-check-label" for="flexRadioDefault2">
+                      Default checked radio
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                    <label className="form-check-label" for="flexRadioDefault1">
+                      English-EN
+                    </label>
+                  </div>
+                  <div className="form-check">
+                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                    <label className="form-check-label" for="flexRadioDefault1">
+                      English-EN
+                    </label>
+                  </div>
+                </form>
+
               </div>
               <div className="modal-footer">
                 <div><p> <Flag className=" p-1 d-inline-block " height="25 " code={'in'} />You are shopping on Amazon.in.</p>
-                <a href="#" className="btn btn-link">change country/religion</a>
+                  <a href="#" className="btn btn-link">change country/religion</a>
                 </div>
               </div>
             </div>
@@ -201,14 +277,13 @@ class App extends Component {
 
             </button>
             <button className="h-100 fs-6 text-white me-1 p-0 btn" style={{ 'width': '13%' }}>
-              Deliver to pushpita
-
-              <span className="fw-bold d-block"><span className="p_city"><FontAwesomeIcon icon={faMapMarkerAlt} /> Neemuch</span><span className="p_pincode">458441</span></span>
+              Hello
+              <span className="fw-bold d-block"><span  ><FontAwesomeIcon className="" icon={faMapMarkerAlt} />Select Your Adderess</span></span>
             </button>
             <form className="hform  me-1 bg-white  rounded-2 d-inline-block p-1  h-75" style={{ 'width': '44%' }} >C</form>
-            <button className="h-100 me-1 btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style={{ 'width': '4%' }}><Flag className=" p-1 d-inline-block " height="25 " code={'in'} /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} /></button>
-            <button className="h-100 me-1 btn text-white" style={{ 'width': '12%' }}>Hello,Sign in
-              <div className="fw-bold">Account &amp; Lists</div>
+            <button className="h-100 me-1 btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style={{ 'width': '4%' }}><Flag className="  d-inline-block " height="25 " code={'in'} /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} /></button>
+            <button className="h-100 me-1 btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal3" style={{ 'width': '12%' }}>Hello,Sign in
+              <div className="fw-bold">Account &amp; Lists <FontAwesomeIcon className="text-white" icon={faChevronDown} /></div>
             </button>
             <button className="h-100 me-1 btn text-white fs-6 " style={{ 'width': '8%' }}>Return
               <div className="fw-bold">&amp; orders</div></button>
@@ -443,110 +518,114 @@ class App extends Component {
         <footer>
           <a href="#" className="btn btn-success border-0  lh-lg w-100" style={{ backgroundColor: '#37475a', height: '47px' }}>Back to Top</a>
 
-          <div className=" p_footer_top ">
-            <div className=" container row text-white ">
-              <div className="col-3">
-                <h6 className="fw-bolder">Get to Know Us</h6>
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link " >About Us</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Careers</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Press Releases</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#" >Amazon Cares</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#" >Gift a Smile</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-3">
-                <h6 className="fw-bolder">Connect with Us</h6>
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link " >Facebook</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Twitter</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Instagram</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-3">
-                <h6 className="fw-bolder">Make Money with Us</h6>
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link " >Sell on Amazon</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Sell under Amazon Accelerator</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Amazon Global Selling</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Become an Affiliate</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Fulfilment by Amazon</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Advertise Your Products</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Amazon Pay on Merchants</a>
-                  </li>
+          <div className=" p_footer_top pb-5">
+            <div className="container pt-5">
+              <div className="  row text-white  ">
+                <div className="col-3">
+                  <h6 className="fw-bolder">Get to Know Us</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link " >About Us</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Careers</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Press Releases</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#" >Amazon Cares</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#" >Gift a Smile</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-3">
+                  <h6 className="fw-bolder">Connect with Us</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link " >Facebook</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Twitter</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Instagram</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-3">
+                  <h6 className="fw-bolder">Make Money with Us</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link " >Sell on Amazon</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Sell under Amazon Accelerator</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Amazon Global Selling</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Become an Affiliate</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Fulfilment by Amazon</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Advertise Your Products</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Amazon Pay on Merchants</a>
+                    </li>
 
-                </ul>
-              </div>
-              <div className="col-3">
-                <h6 className="fw-bolder">Let Us Help You</h6>
-                <ul className="nav flex-column">
-                  <li className="nav-item">
-                    <a className="nav-link " >COVID-19 and Amazon</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Your Account</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Returns Centre</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Returns Centre</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">100% Purchase Protection</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Amazon App Download</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Amazon Assistant Download</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Help</a>
-                  </li>
+                  </ul>
+                </div>
+                <div className="col-3">
+                  <h6 className="fw-bolder">Let Us Help You</h6>
+                  <ul className="nav flex-column">
+                    <li className="nav-item">
+                      <a className="nav-link " >COVID-19 and Amazon</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Your Account</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Returns Centre</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Returns Centre</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">100% Purchase Protection</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Amazon App Download</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Amazon Assistant Download</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Help</a>
+                    </li>
 
-                </ul>
+                  </ul>
+                </div>
               </div>
+              
             </div>
-          </div>
-          <div className="p_footer_bottom"></div>
+          
+            </div>
+            <div className="p_footer_bottom"></div>
         </footer>
 
       </div>
-    );
+        );
   }
 }
 
 
-App.propTypes = {}
-export default App
+        App.propTypes = { }
+        export default App
 

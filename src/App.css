@@ -3,6 +3,9 @@
 }
 header{
   border:1px dashed red;
+} 
+button:focus{
+  box-shadow:none !important;
 }
 .p_header_top{
   height:60px;
@@ -25,7 +28,18 @@ header{
   background: #eaeded;
   color: #333;
 }
-
+.p_signin_model{
+  display: block !important;
+}
+.p_ht_signin_model a{
+  font-size:14px !important;
+  padding: 2px !important;
+  color: #333;
+}
+.p_ht_signin_model a:hover{
+  text-decoration: underline;
+  color:#f0c350;
+}
 .headermodal{
   transition: all 0.3 ease-out !important;
   top:-30px !important;
@@ -153,6 +167,10 @@ footer{
 .p_footer_top a{
   padding: 4px 0px;
   color:#fff;
+  
+}
+.p_footer_top .container{
+  max-width: 990px;
 }
 .p_footer_bottom{
   height:200px;
