@@ -5,6 +5,7 @@ import { faMapMarkerAlt, faBars, faCartPlus, faUser, faChevronRight, faChevronUp
 import Flag from 'react-world-flags';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Button, Modal, Carousel } from 'react-bootstrap'
 
 
 
@@ -17,7 +18,10 @@ class App extends Component {
   //1. properties
   state = {
     x: '',
-    y: 'l934'
+    y: 'l934',
+    showAllModal: false,
+    showSigninModal: false,
+    showCountryFlagdd: false
   }
   //2.constructor
   constructor(props) {
@@ -48,229 +52,232 @@ class App extends Component {
   }
 
   render() {
+
+    const handleClose = () => {
+      this.setState({ showAllModal: false });
+    }
+    const handleShow = () => {
+      this.setState({ showAllModal: true });
+    }
+    const handleClose2 = () => {
+      this.setState({ showSigninModal: false });
+    }
+    const handleShow2 = () => {
+      this.setState({ showSigninModal: true });
+    }
+    const handleClose3 = () => {
+      this.setState({ showCountryFlagdd: false });
+    }
+    const handleShow3 = () => {
+      this.setState({ showCountryFlagdd: true });
+    }
+
+
+
+
     return (
 
       <div>
-        <div class="modal p_ht_signin_model " id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header text-center p_signin_model">
-                <button className="btn btn-warning w-50">Sign in</button>
-                <p className="fs-6">New Customer<a className="btn btn-link" href="#">Start here.</a></p>
-              </div>
-              <div class="modal-body">
-                <div className="row m-0">
-                  <div className="col border-end ">
-                    <h5>Your Lists</h5>
-                    <ul class="nav flex-column">
-                      <li class="nav-item">
-                        <a class="nav-link " href="#">Create Wish lists</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Find a Wish list</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Wish from Any Website</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Babt Wish list</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Discover Your Style</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Explore Showroom</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col ">
-                    <ul class="nav flex-column">
-                      <h5>Your Account</h5>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#">Your Account</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Your Wish list</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Your Recommendations</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Your Prime Membership</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Your Prime Vedio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Your Subscribe &amp; Saved Item</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Membership &amp; Subscriptions</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Your Amazon Business Account</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Your Seller Account</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link " href="#" >Manage Your Content &amp; Devices</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+        <Modal className="headermodal h-100" show={this.state.showAllModal} onHide={handleClose} animation={false}>
+          <Modal.Header className="text-white mhcolor" closeButton>
+            <h5 className="modal-title" id="staticBackdropLabel"><FontAwesomeIcon className="me-2" icon={faUser} />Hello, Sign in</h5>
+          </Modal.Header>
+          <Modal.Body >
+            <h5 className="fw-bolder ps-4">Trending</h5>
+            <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link " href="#">Best Sellers</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">New Releases</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link " href="#">Movers &amp; Shakers</a>
+              </li>
+            </ul>
+            <h5 className="fw-bolder ps-4">Digital Content And Devices</h5>
+            <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link " href="#">Echo &amp; Alexa<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Fire Tv<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link " href="#">Kindle E-Readers &amp; E-Books<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link " href="#">Audible Audiobooks<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link " href="#">Amazon Prime Vedio<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link  " href="#">Amazon Prime Music<FontAwesomeIcon className="float-end" icon={faChevronRight} />c</a>
+              </li>
+            </ul>
 
+            <h5 className="fw-bolder ps-4 ">Shop By Department </h5>
+            <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link " href="#">Mobiles,Computers<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">TV,Applinces,Electronics<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link " href="#">Men's Fashion<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link " href="#">Women's Fashion<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link " href="#">See All<FontAwesomeIcon className="ms-2" icon={faChevronUp} /></a>
+              </li>
+
+            </ul>
+            <h5 className="fw-bolder ps-4 ">Programs &amp; Features</h5>
+            <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link " href="#">Gift Card &amp; Mobile Reacharges<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Flight Tickets</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link " href="#">Amazon Assitant</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link  " href="#">Full Store Directory</a>
+              </li>
+            </ul>
+            <h5 className="fw-bolder ps-4 ">Help &amp; Settings</h5>
+            <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
+              <li className="nav-item">
+                <a className="nav-link " href="#">Your Account</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Coustmer Service</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link " href="#">Sign In</a>
+              </li>
+
+            </ul>
+          </Modal.Body>
+        </Modal>
+        <Modal className="text-center p_ht_signin_model" show={this.state.showSigninModal} onHide={handleClose2} animation={false}>
+          <Modal.Header closeButton>
+            <button className="btn btn-warning w-50">Sign in</button>
+            <p className="">New Coustmer?<a className="btn btn-link" href="#">Start here.</a></p>
+          </Modal.Header>
+          <Modal.Body>
+            <div className="row m-0">
+              <div className="col border-end ">
+                <h5>Your Lists</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Create Wish lists</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Find a Wish list</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Wish from Any Website</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Babt Wish list</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Discover Your Style</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Explore Showroom</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col ">
+                <ul class="nav flex-column">
+                  <h5>Your Account</h5>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Your Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Your Wish list</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Your Recommendations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Your Prime Membership</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Your Prime Vedio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Your Subscribe &amp; Saved Item</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Membership &amp; Subscriptions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Your Amazon Business Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Your Seller Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" >Manage Your Content &amp; Devices</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="modal show p_ht_countrydd" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdrop1Label" aria-hidden="true">
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="staticBackdrop1Label">
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                    <label className="form-check-label" u="flexRadioDefault1">
-                      English-EN
-                    </label>
-                  </div>
-                </h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div className="modal-body">
-                <form>
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                    <label className="form-check-label" for="flexRadioDefault1">
-                      English-EN
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                    <label className="form-check-label" for="flexRadioDefault2">
-                      Default checked radio
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                    <label className="form-check-label" for="flexRadioDefault1">
-                      English-EN
-                    </label>
-                  </div>
-                  <div className="form-check">
-                    <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                    <label className="form-check-label" for="flexRadioDefault1">
-                      English-EN
-                    </label>
-                  </div>
-                </form>
-
-              </div>
-              <div className="modal-footer">
-                <div><p> <Flag className=" p-1 d-inline-block " height="25 " code={'in'} />You are shopping on Amazon.in.</p>
-                  <a href="#" className="btn btn-link">change country/religion</a>
-                </div>
-              </div>
+          </Modal.Body>
+        </Modal>
+        <Modal className="p_ht_countrydd" show={this.state.showCountryFlagdd} onHide={handleClose3} animation={false}>
+          <Modal.Header >
+            <div className="form-check">
+              <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+              <label className="form-check-label" u="flexRadioDefault1">
+                English-EN
+              </label>
             </div>
-          </div>
-        </div>
-        <div className="modal " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div className={'modal-dialog h-100 modal-dialog-scrollable headermodal ' + this.state.y}>
-            <div className="modal-content">
-              <div className="modal-header text-white mhcolor" >
-                <h5 className="modal-title" id="staticBackdropLabel"><FontAwesomeIcon className="me-2" icon={faUser} />Hello, Sign in</h5>
-                <button onClick={this.closeModal} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </Modal.Header>
+          <Modal.Body>
+            <form>
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label className="form-check-label" for="flexRadioDefault1">
+                  English-EN
+                </label>
               </div>
-              <div className="modal-body border-bottom">
-                <h5 className="fw-bolder ps-4">Trending</h5>
-                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Best Sellers</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">New Releases</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Movers &amp; Shakers</a>
-                  </li>
-                </ul>
-                <h5 className="fw-bolder ps-4">Digital Content And Devices</h5>
-                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Echo &amp; Alexa<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Fire Tv<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Kindle E-Readers &amp; E-Books<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Audible Audiobooks<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Amazon Prime Vedio<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link  " href="#">Amazon Prime Music<FontAwesomeIcon className="float-end" icon={faChevronRight} />c</a>
-                  </li>
-                </ul>
-
-                <h5 className="fw-bolder ps-4 ">Shop By Department </h5>
-                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Mobiles,Computers<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">TV,Applinces,Electronics<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Men's Fashion<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Women's Fashion<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">See All<FontAwesomeIcon className="ms-2" icon={faChevronUp} /></a>
-                  </li>
-
-                </ul>
-                <h5 className="fw-bolder ps-4 ">Programs &amp; Features</h5>
-                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Gift Card &amp; Mobile Reacharges<FontAwesomeIcon className="float-end" icon={faChevronRight} /></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Flight Tickets</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Amazon Assitant</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link  " href="#">Full Store Directory</a>
-                  </li>
-                </ul>
-                <h5 className="fw-bolder ps-4 ">Help &amp; Settings</h5>
-                <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Your Account</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Coustmer Service</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link " href="#">Sign In</a>
-                  </li>
-
-                </ul>
-
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                <label className="form-check-label" for="flexRadioDefault2">
+                  Default checked radio
+                </label>
               </div>
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label className="form-check-label" for="flexRadioDefault1">
+                  English-EN
+                </label>
+              </div>
+              <div className="form-check">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label className="form-check-label" for="flexRadioDefault1">
+                  English-EN
+                </label>
+              </div>
+            </form>
 
+          </Modal.Body>
+          <Modal.Footer>
+            <div><p> <Flag className=" p-1 d-inline-block " height="25 " code={'in'} />You are shopping on Amazon.in.</p>
+              <a href="#" className="btn btn-link">change country/religion</a>
             </div>
-          </div>
-        </div>
-
+          </Modal.Footer>
+        </Modal>
         <header>
           <div className={'p_header_top p-1 w-100 ' + this.state.x}>
             <button className="h-100 me-1 btn" style={{ 'width': '9%' }}>
@@ -281,8 +288,8 @@ class App extends Component {
               <span className="fw-bold d-block"><span  ><FontAwesomeIcon className="" icon={faMapMarkerAlt} />Select Your Adderess</span></span>
             </button>
             <form className="hform  me-1 bg-white  rounded-2 d-inline-block p-1  h-75" style={{ 'width': '44%' }} >C</form>
-            <button className="h-100 me-1 btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style={{ 'width': '4%' }}><Flag className="  d-inline-block " height="25 " code={'in'} /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} /></button>
-            <button className="h-100 me-1 btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal3" style={{ 'width': '12%' }}>Hello,Sign in
+            <button onMouseOver={handleShow3} className="h-100 me-1 btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop1" style={{ 'width': '4%' }}><Flag className="  d-inline-block " height="25 " code={'in'} /><FontAwesomeIcon className="text-white d-inline-block" icon={faChevronDown} /></button>
+            <button onMouseEnter={handleShow2} className="h-100 me-1 btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal3" style={{ 'width': '12%' }}>Hello,Sign in
               <div className="fw-bold">Account &amp; Lists <FontAwesomeIcon className="text-white" icon={faChevronDown} /></div>
             </button>
             <button className="h-100 me-1 btn text-white fs-6 " style={{ 'width': '8%' }}>Return
@@ -292,7 +299,7 @@ class App extends Component {
           <div className="p_header_bottom">
             <ul className=" ms-2 nav float-start">
               <li className="nav-item">
-                <button onClick={this.handleModal} type="button" className="btn m-1 p-0 " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <a className="nav-link text-white m-1 fs-6 p-0" href="#"><FontAwesomeIcon className="fs-5 me-1" icon={faBars} /> All</a></button>
+                <button onClick={handleShow} type="button" className="btn m-1 p-0 " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <a className="nav-link text-white m-1 fs-6 p-0" href="#"><FontAwesomeIcon className="fs-5 me-1" icon={faBars} /> All</a></button>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Best Sellers</a>
@@ -351,50 +358,73 @@ class App extends Component {
         </header>
         <div className="p_main position-relative ">
           <div className=" p_main1 p_main_top ">
-            <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-              <div className="carousel-inner">
-                <div className="carousel-item active" >
-                  <img src="./images/slider/1.jpg" className="d-block " alt="..." />
-                </div>
-                <div className="carousel-item" >
-                  <img src="./images/slider/2.jpg" className="d-block " alt="..." />
-                </div>
-                <div className="carousel-item" >
-                  <img src="./images/slider/3.jpg" className="d-block " alt="..." />
-                </div>
-                <div className="carousel-item" >
-                  <img src="./images/slider/4.jpg" className="d-block " alt="..." />
-                </div>
-                <div className="carousel-item">
-                  <img src="./images/slider/5.jpg" className="d-block" alt="..." />
-                </div>
-                <div className="carousel-item" >
-                  <img src="./images/slider/6.jpg" className="d-block" alt="..." />
-                </div>
+            <Carousel>
+              <Carousel.Item>
+                <img
+                  className="d-block "
+                  src="./images/slider/1.jpg"
+                  alt="First slide"
+                />
 
-                <div className="carousel-item" >
-                  <img src="./images/slider/7.jpg" className="d-block " alt="..." />
-                </div>
-                <div className="carousel-item" >
-                  <img src="./images/slider/8.jpg" className="d-block" alt="..." />
-                </div>
-              </div>
-              <button className="carousel-control-prev h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button className="carousel-control-next h-50" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
-            </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block "
+                  src="./images/slider/2.jpg"
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block "
+                  src="./images/slider/3.jpg"
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block "
+                  src="./images/slider/4.jpg"
+                  alt="Fourth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block "
+                  src="./images/slider/5.jpg"
+                  alt="Fivth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block "
+                  src="./images/slider/6.jpg"
+                  alt="Sixth slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block "
+                  src="./images/slider/7.jpg"
+                  alt="Seventh slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block "
+                  src="./images/slider/8.jpg"
+                  alt="Eighth slide"
+                />
+              </Carousel.Item>
+            </Carousel>
+
 
           </div>
           <div className="ml-1 position-absolute  p_main_bottom  ">
             <div className="p_main_bottom_1 m-0 mb-3 row">
               <div className="col p-2">
                 <div className="p_mainbox1 p-3 ">
-                  <div className="p_mainbox1_inner w-100 h-100 bg-danger">
+                  <div className="p_mainbox1_inner  h-100 bg-danger">
                     <div className="w-100 bg-warning">
                       <h5>Top picks for your home</h5>
                       <div className="row  m-0 ">
@@ -413,7 +443,7 @@ class App extends Component {
                         </div>
                         <div className="col-6 p-0 tbdr">
                           <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
-                            <img className="img-fluid h-75 pe-1" src="./images/main_images/3.jpg" />
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/3..jpg" />
                             Microwaves
                           </a>
 
@@ -435,7 +465,39 @@ class App extends Component {
               <div className="col p-2">
                 <div className="p_mainbox1 p-3 ">
                   <div className="p_mainbox1_inner w-100 h-100 bg-danger">
-                    <div className="w-100 bg-warning"></div>
+                    <div className="w-100 bg-warning">
+                      <h5>Everyday essentials</h5>
+                      <div className="row  m-0 ">
+                        <div className="col-6 tbdr p-0">
+                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/5.jpg" />
+                            Cleaning essentials
+                          </a>
+
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/6.jpg" />
+                            Immunity amp; healthCare
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/7.jpg" />
+                            Women's personal care
+                          </a>
+
+
+                        </div>
+
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/8.jpg" />
+                            Men's grooming
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                     <a href="#" className="btn btn-link">See More</a>
                   </div>
                 </div>
@@ -443,76 +505,290 @@ class App extends Component {
               <div className="col p-2">
                 <div className="p_mainbox1 p-3 ">
                   <div className="p_mainbox1_inner w-100 h-100 bg-danger">
-                    <div className="w-100 bg-warning"></div>
+                    <div className="w-100 bg-warning">
+                      <h5>Automotive essentials | Up to 60% off</h5>
+                      <div className="row  m-0 ">
+                        <div className="col-6 tbdr p-0">
+                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/9.jpg" />
+                            Cleaning Accessories
+                          </a>
+
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/10.jpg" />
+                            Tyre &amp; rim care
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/11.jpg" />
+                            Helmets
+                          </a>
+
+
+                        </div>
+
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/12.jpg" />
+                            Veccum cleaner
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                     <a href="#" className="btn btn-link">See More</a>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className="row ">
-                  <div className="col-12 tbdr bg-white mb-4 p-3" style={{ 'height': 150 + 'px' }}>
+                  <div className="col-12 tbdr bg-white mb-3 p-3" style={{ 'height': 150 + 'px' }}>
                     <h4 className="p-2">Sign in for your best experience</h4>
                     <button className="btn btn-warning w-100 rounded-1 border border-secondary">Sign in securely</button>
                   </div>
                   <div className="col-12 p-0  tbdr bg-white " style={{ 'height': 254 + 'px' }}>
-                    <img className="img-fluid w-100 h-100" src="./images/main_images/5.jpg" />
+                    <img className="img-fluid h-100 w-100" src="./images/main_images/13.jpg" />
                   </div>
                 </div>
               </div>
             </div>
             <div className="p_main_bottom_2 row m-0 mb-3">
-              <div className="col-6">A</div>
-              <div className="col-3">B</div>
-              <div className="col-3">C</div>
-            </div>
-            <div className="p_main_bottom_3 p-3">
-              <div className="">
-                <h3 className="float-start">Today's Deals</h3><button type="button" className=" float-start btn btn-link">see all deals</button>
-              </div>
-              <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner text-center">
-                  <div className="carousel-item active">
-                    <div className="imgcont row ">
-                      <div className="col">1</div>
-                      <div className="col">2</div>
-                      <div className="col">3</div>
-                      <div className="col">4</div>
-                      <div className="col">5</div>
-                      <div className="col">6</div>
+              <div className="col">a </div>
+              <div className="col p-2">
+                <div className="p_mainbox1 p-3 ">
+                  <div className="p_mainbox1_inner  h-100 bg-danger">
+                    <div className="w-100 bg-warning">
+                    <h5>Home essentials | Amazon Brands &amp; more</h5>
+                      <div className="row  m-0 ">
+                        <div className="col-6 tbdr p-0">
+                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/14.jpg" />
+                            Bedsheet curtains &amp; more
+                          </a>
+
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/15.jpg" />
+                            Cloth organizers,boxes &amp; baskets
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/16.jpg" />
+                            Wallstickers &amp; clocks
+                          </a>
+
+
+                        </div>
+
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/17.jpg" />
+                            Smart bulbs &amp; string lights
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="imgcont row ">
-                      <div className="col">7</div>
-                      <div className="col">8</div>
-                      <div className="col">9</div>
-                      <div className="col">10</div>
-                      <div className="col">11</div>
-                      <div className="col">12</div>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="imgcont row ">
-                      <div className="col">13</div>
-                      <div className="col">14</div>
-                      <div className="col">15</div>
-                      <div className="col">16</div>
-                      <div className="col">17</div>
-                      <div className="col">18</div>
-                    </div>
+                    <a href="#" className="btn btn-link">See More</a>
                   </div>
                 </div>
-                <button className=" p_cc carousel-control-prev rounded-end " type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="p_cc carousel-control-next rounded-start " type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Next</span>
-                </button>
               </div>
-            </div>
+              <div className="col">
+              <div className="col p-2">
+                <div className="p_mainbox1 p-3 ">
+                  <div className="p_mainbox1_inner  h-100 bg-danger">
+                    <div className="w-100 bg-warning">
+                      <h5>Home essentials | Amazon Brands &amp; more</h5>
+                      <div className="row  m-0 ">
+                        <div className="col-6 tbdr p-0">
+                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/18.jpg" />
+                          Clothing
+                          </a>
 
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/19.jpg" />
+                            Footwear
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 pe-1" src="./images/main_images/20.jpg" />
+                            Watches
+                          </a>
+
+
+                        </div>
+
+                        <div className="col-6 p-0 tbdr">
+                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                            <img className="img-fluid h-75 ps-1" src="./images/main_images/21.jpg" />
+                            Bags &amp; luggage
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" className="btn btn-link">See More</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div className="col">d</div>
+            </div>
+            <div className="p_main_bottom_3 mb-3 p-3">
+              <div className="mb-5">
+                <h5 className="float-start">Today's Deals</h5><button type="button" className=" float-start btn btn-link">see all deals</button>
+              </div>
+
+              <Carousel id="carouselExampleControls2"  >
+                <Carousel.Item>
+                  <div className="imgcont row ">
+                    <div className="col p-0 text-center">
+                      <div className="imgplace"></div>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/7.jpg" />
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/8.jpg" />
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/9.jpg" />
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/10.jpg" />
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/6.jpg" />
+                    </div>
+                  </div>
+
+
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="imgcont row ">
+                    <div className="col p-0 text-center">1</div>
+                    <div className="col p-0 text-center">2</div>
+                    <div className="col p-0 text-center">3</div>
+                    <div className="col p-0 text-center">4</div>
+                    <div className="col p-0 text-center">5</div>
+                    <div className="col p-0 text-center">6</div>
+                  </div>
+
+
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="imgcont row ">
+                    <div className="col p-0 text-center">1</div>
+                    <div className="col p-0 text-center">2</div>
+                    <div className="col p-0 text-center">3</div>
+                    <div className="col p-0 text-center">4</div>
+                    <div className="col p-0 text-center">5</div>
+                    <div className="col p-0 text-center">6</div>
+                  </div>
+
+
+                </Carousel.Item>
+              </Carousel>
+            </div>
+            <div className="p_main_bottom_4 mb-3 p-3 tbdr">
+              <div className="mb-3">
+                <h5 className="">Best Sellers in Computers &amp; Accessories</h5>
+              </div>
+              <Carousel id="carouselExampleControls3"  >
+                <Carousel.Item>
+                  <div className="  imgcont2 row ">
+                    <div className="col p-0 text-center">
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/7.jpg" />
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/8.jpg" />
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/9.jpg" />
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/10.jpg" />
+                    </div>
+                    <div className="col p-0 text-center">
+                      <img className="img-fluid" src="./images/main_images/6.jpg" />
+                    </div>
+                  </div>
+
+
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="imgcont2  row ">
+                    <div className="col p-0 text-center">1</div>
+                    <div className="col p-0 text-center">2</div>
+                    <div className="col p-0 text-center">3</div>
+                    <div className="col p-0 text-center">4</div>
+                    <div className="col p-0 text-center">5</div>
+                    <div className="col p-0 text-center">6</div>
+                  </div>
+
+
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="imgcont2 row ">
+                    <div className="col p-0 text-center">1</div>
+                    <div className="col p-0 text-center">2</div>
+                    <div className="col p-0 text-center">3</div>
+                    <div className="col p-0 text-center">4</div>
+                    <div className="col p-0 text-center">5</div>
+                    <div className="col p-0 text-center">6</div>
+                  </div>
+
+
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="row imgcont2">
+                    <div className="col p-0 text-center">1</div>
+                    <div className="col p-0 text-center">2</div>
+                    <div className="col p-0 text-center">3</div>
+                    <div className="col p-0 text-center">4</div>
+                    <div className="col p-0 text-center">5</div>
+                    <div className="col p-0 text-center">6</div>
+                  </div>
+
+
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className=" row imgcont2">
+                    <div className="col p-0 text-center">1</div>
+                    <div className="col p-0 text-center">2</div>
+                    <div className="col p-0 text-center">3</div>
+                    <div className="col p-0 text-center">4</div>
+                    <div className="col p-0 text-center">5</div>
+                    <div className="col p-0 text-center">6</div>
+                  </div>
+
+
+                </Carousel.Item>
+              </Carousel>
+
+            </div>
+            <div className="p_main_bottom_5 mb-3 tbdr"></div>
+            <div className="p_main_bottom_6 mb-3 tbdr"></div>
+            <div className="p_main_botton_7 mb-3 tbdr"></div>
+            <div className="p_main_botton_8 mb-3  container tbdr">
+              <img className="" src=".images/main_images/banner.jpg" />
+            </div>
+            <div className="p_main_botton_9 mb-3 tbdr"></div>
+            <div className="p_main_botton_10 mb-3 tbdr"></div>
+            <div className="p_main_botton_11 mb-3 tbdr"></div>
+            <div className="p_main_botton_12 mb-3 tbdr"></div>
+            <div className="p_main_botton_13mb-3 tbdr"></div>
+            <div className="p_main_botton_14 mb-3 tbdr"></div>
           </div>
         </div>
         <footer>
@@ -613,19 +889,19 @@ class App extends Component {
                   </ul>
                 </div>
               </div>
-              
+
             </div>
-          
-            </div>
-            <div className="p_footer_bottom"></div>
+
+          </div>
+          <div className="p_footer_bottom"></div>
         </footer>
 
-      </div>
-        );
+      </div >
+    );
   }
 }
 
 
-        App.propTypes = { }
-        export default App
+App.propTypes = {}
+export default App
 
