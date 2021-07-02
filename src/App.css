@@ -1,18 +1,21 @@
+/**************************Home css start******************************************/
 .tbdr{
   border:1px dashed #000;
 }
 header{
-  border:1px dashed red;
+  position:relative;
+z-index:10001;
+
 } 
 button:focus{
   box-shadow:none !important;
 }
 .p_header_top{
   height:60px;
-  border:1px dashed green;
   z-index: 10000;
   background:#131921;
 }
+
 .p_header_top > button:hover{
   outline:1px solid #fff;
 }
@@ -28,11 +31,17 @@ button:focus{
   background: #eaeded;
   color: #333;
 }
-.p_ht_signin_model{
+.p_signin_model{
   display: block !important;
 }
+.p_ht_signin_model{
+  top:30px !important;
+  left:365px !important;
+  position: absolute !important;
+  z-index: 100004 !important;
+}
 .p_ht_signin_model a{
-  font-size:14px !important;
+  font-size:12px !important;
   padding: 2px !important;
   color: #333;
 }
@@ -41,6 +50,8 @@ button:focus{
   color:#f0c350;
 }
 .headermodal{
+  position: absolute !important;
+  z-index: 100004 !important;
   transition: all 0.3 ease-out !important;
   top:-30px !important;
   max-width: 365px !important;
@@ -55,7 +66,7 @@ button:focus{
 
 .p_header_bottom{
   height:39px;
-  border:1px dashed purple;
+
   background: #232f3e;
 }
 .p_header_bottom a {
@@ -65,9 +76,41 @@ button:focus{
   font-size:15px;
   color:#fff;
   margin-top:3px;
-  font-weight: bold;
 
 }
+.overlay{
+  position: fixed;
+  z-index:10000;
+  transition:all linear 0.2s;
+  background: rgba(0,0,0,0.5);
+}
+.p_visible{
+opacity:1;
+visibility: visible;
+}
+.p_invisible{
+opacity:0;
+visibility: hidden;
+}
+.primeBox{
+  height: 340px;
+  width:342px;
+  top:35px;
+}
+.p_header_bottom li:hover .prime~div{
+  display:block !important;
+}
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  
+  border-bottom: 10px solid #fff;
+  top:-10px;
+  left:45px;
+}
+
 .p_header_bottom a:hover{
   outline:1px solid #fff;
   color:#fff;
@@ -77,12 +120,14 @@ button:focus{
 }
 .p_ht_countrydd{
   width: 20% !important;
-  left:950px !important;
+  left:900px !important;
   top:20px !important;
+  position: absolute !important;
+  z-index: 100003 !important;
 }
 
 .p_main{
-  height:5453px;
+ min-height:5271px;
  border:1px dashed black;
  background:#eaeded
 }
@@ -96,7 +141,7 @@ button:focus{
 }
 .p_main_bottom{
 
-  height: 5202px;
+  height: 5020px;
   border:1px dashed blue;
   background:#eaeded;
   top:250px;
@@ -178,7 +223,7 @@ background:blue;
 box-shadow:-2px 0px 2px 2px rgba(0,0,0,0.3) ;
 }
 .p_main_bottom_4{
-  height: 280px;
+  height: 287px;
 }
 .imgcont2{
   height:222px ;
@@ -216,34 +261,35 @@ box-shadow:-2px 0px 2px 2px rgba(0,0,0,0.3) ;
 box-shadow:-2px 0px 2px 2px rgba(0,0,0,0.3) ;
 }
 .p_main_bottom_5{
-  height: 420px;
+  height: 423px;
 }
 .p_main_bottom_6{
-  height: 280px;
+  height: 287px;
 }
 .p_main_botton_7{
-  height:280px ;
+  height:283px ;
 }
 .p_main_botton_8{
-  height:248px ;
+  height:253px ;
 }
 .p_main_botton_9{
- height:420px ;
+ height:423px ;
 }
 .p_main_botton_10{
   height: 283px;
 }
 .p_main_botton_11{
-  height: 280px;
+  height: 283px;
 }
 .p_main_botton_12{
-  height:420px ;
+  height:423px ;
 }
 .p_main_botton_13{
   height:150px ;
 }
 .p_main_botton_14{
-  height: 648px;
+  height: 670px;
+  background: yellowgreen;
 }
 footer{
   height: 702px;
@@ -271,5 +317,31 @@ footer{
   height:200px;
   background:#131a22;
 }
+/**************************Home css end******************************************/
 
 
+/**************************Detail css start******************************************/
+.p_dtl_main{
+  width:98%;
+  background: teal;
+}
+.p_dtl_top_bannr{
+  height:50px;
+}
+.p_dtl_prodCont{
+  height:1720px;
+}
+.p_dtl_prodContBottm{
+  height: 336px;
+}
+.p_dtl_havQ{
+  height:170px;
+}
+.p_dtl_prodRelItm{
+  height: 370px;
+}
+.p_dtl_custAlsoRev{
+  height: 400px;
+}
+
+/**************************Detail css end******************************************/
