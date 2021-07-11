@@ -4,7 +4,7 @@
 }
 header{
   position:relative;
-z-index:10001;
+z-index:10000;
 
 } 
 button:focus{
@@ -14,6 +14,26 @@ button:focus{
   height:60px;
   z-index: 10000;
   background:#131921;
+
+}
+.hform input:focus{
+  border:none !important;
+  box-shadow: none !important;
+}
+.hform{
+  border-radius: 9px;
+  border:3px solid #131921;
+}
+.hform input{
+  border:none !important;
+}
+.hformsbmt{
+  border-radius: 7px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+.formBorder{
+  border:3px solid #ff9900 !important;
 }
 
 .p_header_top > button:hover{
@@ -35,11 +55,24 @@ button:focus{
   display: block !important;
 }
 .p_ht_signin_model{
-  top:30px !important;
-  left:365px !important;
-  position: absolute !important;
-  z-index: 100004 !important;
+  width: 500px;
+  height: 370px;
+  top:58px ;
+  right:-160px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+  transition: all 0.1s linear 0.1s;
+  opacity:0;
+  visibility: hidden;
+  
 }
+.p_ht_signin_model_button:hover > div.p_ht_signin_model{
+  opacity: 1 ;
+  visibility: visible ; 
+ }
+ .p_aup_ht_signin_model{
+ top: -10px;
+ left:305px;
+ }
 .p_ht_signin_model a{
   font-size:12px !important;
   padding: 2px !important;
@@ -107,6 +140,9 @@ visibility: hidden;
   border-right: 10px solid transparent;
   
   border-bottom: 10px solid #fff;
+ 
+}
+.p_aup_primeBox{
   top:-10px;
   left:45px;
 }
@@ -119,13 +155,24 @@ visibility: hidden;
   color:#fff;
 }
 .p_ht_countrydd{
-  width: 20% !important;
-  left:900px !important;
-  top:20px !important;
-  position: absolute !important;
-  z-index: 100003 !important;
+ width: 237px;
+  height: 300px;
+  left:6px;
+  top:57px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+  transition: all 0.1s linear 0.1s;
+ opacity: 0;
+  visibility: hidden;
 }
+.p_aup_ht_countrydd{
+  left:22px;
+  top:-10px;
 
+}
+.p_ht_countrydd_btn:hover > div.p_ht_countrydd{
+  opacity: 1;
+  visibility: visible;
+}
 .p_main{
  min-height:5271px;
  border:1px dashed black;
@@ -140,17 +187,15 @@ visibility: hidden;
   border: 1px dashed orange;
 }
 .p_main_bottom{
-
-  height: 5020px;
   border:1px dashed blue;
-  background:#eaeded;
+  
   top:250px;
   left:20px;
   width:97%; 
 }
 .p_main_bottom_1{
   border:1px dashed black;
-  background:red;
+
 }
 .p_main_bottom_1 > div{
 height:423px;
@@ -159,7 +204,16 @@ border:1px dashed black;
 .p_mainbox1{
 height:98%;
 width:98%;
-background:blue;
+background:#fff;
+}
+.p_toplinks{
+  height: 265px;
+  overflow: hidden;
+}
+.p_toplinks > div{
+  background: #f2fafb;
+  height: 50% !important;
+  border:1px solid #fff;
 }
 .p_mainbox1_inner >div{
   height:90%;
@@ -307,29 +361,65 @@ footer{
 
 .p_footer_top a{
   padding: 4px 0px;
-  color:#fff;
+  color:#fff !important;
   
+} 
+.p_footer_top a:hover{
+  text-decoration: underline;
+  color:#fff !important;
 }
 .p_footer_top .container{
   max-width: 990px;
 }
 .p_footer_bottom{
-  height:200px;
+  height:232px;
   background:#131a22;
+}
+.p_footer_bottom ul{
+  width:50%;
+}
+.p_footer_bottom ul li{
+  margin-bottom: 10px;
+}
+.p_footer_bottom a{
+  font-size: 11px;
+  color:#fff;
+  padding: 0px;
+  
+}
+.p_footer_bottom a:hover{
+  text-decoration: underline;
+  color:#d0d7c5 ;
+}
+.p_footer_eng:hover{
+  background: transparent !important;
 }
 /**************************Home css end******************************************/
 
 
 /**************************Detail css start******************************************/
+.pricecolor{
+  color:orangered;
+}
 .p_dtl_main{
   width:98%;
-  background: teal;
 }
 .p_dtl_top_bannr{
   height:50px;
 }
 .p_dtl_prodCont{
   height:1720px;
+}
+.p_dtl_prodMainImg{
+  width: 490px;
+  height: 490px;
+}
+.p_dtl_prodthumbnail{
+  width:50px;
+}
+.p_dtl_prodthumbnail a:hover{
+  border:1px solid #e77600;
+  box-shadow: 0px,0px,5px,2px,#e77600;
 }
 .p_dtl_prodContBottm{
   height: 336px;
@@ -343,5 +433,34 @@ footer{
 .p_dtl_custAlsoRev{
   height: 400px;
 }
+.p_dtl_prodCont a{
+  text-decoration: none;
+}
+.p_dtl_prodCont a:hover{
+  text-decoration: underline;
+  color:orangered;
+}
+.t1225{
+  top:1225px;
+}
+.p_dtl_ratingbox{
+  height:330px;
+  width: 337px;
+  background: #fff;
+  z-index: 1000000;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
+  transition: all 0.1s linear 0.1s;
+  opacity: 0;
+  visibility: hidden;
+}
+.p_dtl_ratingbox_div:hover > div{
+ opacity: 1;
+ visibility:visible;
+}
+.p_aup_dtl_ratingbox{
+  top:-10px;
+  left:87px;
+} 
 
 /**************************Detail css end******************************************/
+
