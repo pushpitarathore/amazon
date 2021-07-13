@@ -346,8 +346,7 @@ box-shadow:-2px 0px 2px 2px rgba(0,0,0,0.3) ;
   background: yellowgreen;
 }
 footer{
-  height: 702px;
-  border:1px dashed green;
+  
 }
 .p_footer_top a:hover{
   text-decoration: underline;
@@ -464,3 +463,23 @@ footer{
 
 /**************************Detail css end******************************************/
 
+/*******************************Sign-In css start**************************************/
+.amznbtn{
+  /*background-image: linear-gradient(direction, color-stop1, color-stop2, ...);*/
+  background-image:-webkit-linear-gradient(top,#ffffcc 0% ,#ffcc99 10%, #ffcc66 50%);
+}
+.signincont{
+
+}
+.spritesheet{
+  background:url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png')
+}
+
+
+
+
+
+
+
+
+/*******************************Sign-In css end**************************************/
