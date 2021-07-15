@@ -507,7 +507,7 @@ height:47px;
   
 }
 .p_anch_dec a:hover{
-color:#ff9900 !important;
+color:#c7511f !important;
 text-decoration: underline;
 }
 .p_srch_a a:hover{
@@ -523,9 +523,24 @@ text-decoration: underline;
   /* line-height: 19px;
   text-align: center !important; */
 }
+.p_prime_sheet{
+background-position: -6px -489px;
+}
 
 .p_5star{
-  background-position: -3px,-90px; 
+  background-position: -98px -110px; 
+}
+.p_4star{
+  background-position: -2px -86px; 
+}
+.p_3star{
+  background-position: -293px -183px; 
+}
+.p_2star{
+  background-position: -99px -134px; 
+}
+.p_1star{
+  background-position: -389px -230px; 
 }
 .serchprime{
   width:55px;
@@ -534,6 +549,10 @@ text-decoration: underline;
 .p_primetxt{
   top:-4px;
   right:480px;
+}
+.p_aside_star{
+  height: 20px;
+  width: 98px;
 }
 
 /*******************************Search css end**************************************/
