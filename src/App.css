@@ -517,6 +517,9 @@ text-decoration: underline;
 
   background:url('https://m.media-amazon.com/images/S/sash/3-fm1Jbg4IHlyhq.png')
 }
+.amazonlogo{
+  background: url('https://m.media-amazon.com/images/S/sash/mPGmT0r6IeTyIee.png');
+}
 .sprsheetcont{
   width:98px;
   height: 20px;
@@ -546,13 +549,31 @@ background-position: -6px -489px;
   width:55px;
   height: 19px;
 }
-.p_primetxt{
-  top:-4px;
-  right:480px;
+.srch_arrwbox{
+  width: 15px;
+  height: 19px;
 }
+.srch_arrow{
+  background-position: -11px -52px;
+}
+
 .p_aside_star{
   height: 20px;
   width: 98px;
 }
 
 /*******************************Search css end**************************************/
+.p_cart_main{
+  height:400px;
+}
+/*******************************Delivery css start**************************************/
+.delivery > header{
+  height: 85px;
+}
+.delivery > footer{
+  height: 80px;
+}
+.p_delivery_main{
+  
+}
+/*******************************Delivery css end**************************************/

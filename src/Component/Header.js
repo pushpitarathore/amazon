@@ -378,7 +378,7 @@ class Header extends Component {
                 <a className="nav-link" href="#" >Computers</a>
               </li>
              </ul>
-            <ul className=" ">
+            <ul className=" m-0">
             <li className="nav-item  ">
                 <a href="#">
                   <img className="img-fluid" src="./images/slider/hbanner.jpg" />

@@ -10,6 +10,8 @@ import Search from './Pages/Search'
 import Checkout from './Pages/Checkout'
 import SignIn from './Pages/SignIn';
 import Register from './Pages/Register';
+import Cart from './Pages/Cart';
+import Delivery from './Pages/Delivery';
 
 
 
@@ -29,8 +31,10 @@ class App extends Component {
         <Route path="/detail" component={Detail}></Route>
         <Route path="/signin" component={SignIn}></Route>
          <Route path="/search" component={Search}></Route>
+         <Route path="/cart" component={Cart}></Route>
          <Route path="/register" component={Register}></Route>
         <Route path="/checkout" component={Checkout}></Route>
+        <Route path="/delivery" component={Delivery}></Route>
       </Router>
     
     );

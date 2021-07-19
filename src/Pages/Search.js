@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../Component/Layout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faList, faTh } from '@fortawesome/free-solid-svg-icons'
 
 
 /**
@@ -9,7 +11,33 @@ import Layout from '../Component/Layout'
 **/
 
 class Search extends Component {
-  state = {}
+  state = {
+    view:{
+      r:100,
+      col1:3,
+      col2:9
+    }
+  }
+  showGridView=()=>{
+    //alert('grid view');
+    this.setState({
+      view:{
+        r:'25 float-start',
+        col1:12,
+        col2:12
+      }
+    });
+  }
+  showListView=()=>{
+    //alert('list view');
+    this.setState({
+      view:{
+        r:100,
+        col1:3,
+        col2:9
+      }
+    });
+  }
   render() {
     return (
       <Layout>
@@ -20,7 +48,7 @@ class Search extends Component {
           <div className="p_srch_main_2 tbdr">
             <div className="row h-100  m-0">
               <div className="col-3  p-0 tbdr">
-                <div className="p_aside_str tbdr">
+                <div className="p_aside_str mb-3">
                   <span className=" d-block fw-bold mb-2">Avg. Customer Review</span>
                   <ul className="list-group">
                     <li className="list-group-item border-0 p-0 p_anch_dec">
@@ -41,7 +69,7 @@ class Search extends Component {
 
                   </ul>
                 </div>
-                <div className="p_aside_brand p_anch_dec p_srch_a">
+                <div className="p_aside_brand p_anch_dec p_srch_a mb-3">
                   <span className="d-block fw-bold mb-2">Brand</span>
                   <ul className="list-group">
                     <li className="list-group-item border-0 p-0  p_srch_a">
@@ -117,11 +145,27 @@ class Search extends Component {
                     <li class="list-group-item border-0 p-0">₹20,000-₹30,000</li>
                     <li class="list-group-item border-0 p-0">₹30,000-₹40,000</li>
                     <li class="list-group-item border-0 p-0">₹40,000-₹50,000</li>
-                   </ul>
-
+                  </ul>
+                  
                 </div>
+                
               </div>
               <div className="col-9 tbdr">
+              <div>
+                  <ul className="nav">
+                    <li className="nav-item">
+                      <button className="btn btn-sm" onClick={this.showGridView}> 
+                        <FontAwesomeIcon icon={faTh}/>
+                      </button>
+                    </li>
+                    <li className="nav-item">
+                      <button className="btn btn-sm" onClick={this.showListView}>
+                        <FontAwesomeIcon icon={faList}/>
+                      </button>
+                    </li>
+                   
+                  </ul>
+                </div>
                 <div className="  border-top border-bottom p_serch_filtertop">
                   <h2>Filter by price</h2>
                   <ul className="nav">
@@ -143,17 +187,37 @@ class Search extends Component {
                   </ul>
                 </div>
                 <div className=" border-top border-bottom p_search_prodreslt">
-                  <div className="row pt-4 pb-4 m-0">
-                    <div className="col-3 ">
+                  <div className={' pt-4 pb-4 m-0 row w-'+ this.state.view.r}>
+                    <div className={'col-'+this.state.view.col1}>
                       <a href="#"> <img className="img-fluid " src="./images/main_images/srclaptop.jpg" /></a>
                     </div>
-                    <div className="col-9  ">
+                    <div className={'col-'+ this.state.view.col2}>
+                      <h5 className=" p_anch_dec p_srch_a"><a href="#" className="text-dark">Lenovo IdeaPad Slim 5 11th Gen Intel Core i5 15.6" FHD IPS Thin &amp; Light Laptop (8GB/256GB SSD + 1TB HDD/Win 10/Office/Integrated Iris Xe Graphics/Fingerprint</a></h5>
+
+                      <a href="#" className=" d-block sprsheetcont sprsheet tbdr  p_5star"> </a>
+                      <a href="#"> <span className="d-block srch_arrwbox tbdr  "></span> </a>
+                      <span ><span className="text-danger">₹</span><span className="text-danger fs-4 me-2">37,000</span><span className="text-decoration-line-through me-2 ">₹39,290</span><span className="">Save ₹1,070(5%)</span></span>
+                      <span className="d-block">Save extra with No Cost EMI</span>
+                      <p className="">
+                      <a href="#" className="serchprime p_prime_sheet  amazonlogo tbdr d-block"></a><span className=" "><span className="me-2"> Get it by</span><span className="fw-bold">Friday, July 16</span></span>
+                      </p>
+                      <span >FREE Delivery by Amazon</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div className=" border-top border-bottom p_search_prodreslt">
+                  <div className={' pt-4 pb-4 m-0 row w-'+ this.state.view.r}>
+                    <div className={'col-'+this.state.view.col1}>
+                      <a href="#"> <img className="img-fluid " src="./images/main_images/srclaptop.jpg" /></a>
+                    </div>
+                    <div className={'col-'+ this.state.view.col2}>
                       <h5 className=" p_anch_dec p_srch_a"><a href="#" className="text-dark">Lenovo IdeaPad Slim 5 11th Gen Intel Core i5 15.6" FHD IPS Thin &amp; Light Laptop (8GB/256GB SSD + 1TB HDD/Win 10/Office/Integrated Iris Xe Graphics/Fingerprint</a></h5>
 
                       <a href="#" className=" d-block sprsheetcont sprsheet tbdr p_5star"></a>
                       <span ><span className="text-danger">₹</span><span className="text-danger fs-4 me-2">37,000</span><span className="text-decoration-line-through me-2 ">₹39,290</span><span className="">Save ₹1,070(5%)</span></span>
                       <span className="d-block">Save extra with No Cost EMI</span>
-                      <p className="position-relative"><a href="#" className="serchprime tbdr d-block"></a><span className="position-absolute p_primetxt"><span className="me-2"> Get it by</span><span className="fw-bold">Friday, July 16</span></span></p>
+                      <p className="position-relative"><a href="#" className="serchprime p_prime_sheet tbdr d-block"></a><span className="position-absolute p_primetxt"><span className="me-2"> Get it by</span><span className="fw-bold">Friday, July 16</span></span></p>
                       <span >FREE Delivery by Amazon</span>
                     </div>
                   </div>
