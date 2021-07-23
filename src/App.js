@@ -12,6 +12,9 @@ import SignIn from './Pages/SignIn';
 import Register from './Pages/Register';
 import Cart from './Pages/Cart';
 import Delivery from './Pages/Delivery';
+import OrderHistory from './Pages/OrderHistory';
+
+
 
 
 
@@ -35,6 +38,9 @@ class App extends Component {
          <Route path="/register" component={Register}></Route>
         <Route path="/checkout" component={Checkout}></Route>
         <Route path="/delivery" component={Delivery}></Route>
+        <Route path="/orderhistory" component={OrderHistory}></Route>
+        
+        
       </Router>
     
     );

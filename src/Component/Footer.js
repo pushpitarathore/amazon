@@ -115,15 +115,20 @@ class Footer extends Component {
               </div>
             </div>
             <hr className="text-secondary" />
-           <div>
-            <ul class="nav justify-content-center">
-              <li class="nav-item">
-               <img/>
-              </li>
-              <li class="nav-item">
-              <button type="button" className="btn btn-outline-secondary p_footer_eng"><FontAwesomeIcon className="me-2" icon={faGlobe} />English </button> 
-              </li>
-            </ul>
+            <div>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                <span className=" float-start me-5   p_home_a_box  p_a_logo p_logo_position"></span>
+
+                </li>
+                <li className="nav-item ">
+                  <button type="button" className="btn btn-outline-secondary p_footer_eng">
+                    <span className="flag_sheet mt-1 d-block float-start p_globe_pos"></span>
+                    <span className="float-start pt-0 p-0 ms-2">English</span>
+                    <span className="p_updown_arw_pos amazonlogo  d-block float-end ms-2 mt-1"></span>
+                  </button>
+                </li>
+              </ul>
             </div>
             <div className="mt-3 " style={{ fontSize: '12px' }}>
               <ul className="nav justify-content-center container">
@@ -183,7 +188,7 @@ class Footer extends Component {
           </div>
           <div className="p_footer_bottom ">
             <div className="container pt-4">
-              <div className="row m-0 text-center ">
+              <div className="row m-0 text-center p_footer_ul ">
                 <div className="col">
                   <ul className="nav flex-column ">
                     <li className="nav-item">
@@ -271,10 +276,11 @@ class Footer extends Component {
                   <li className="nav-item me-3">
                     <a className="nav-link" href="#">Interest-Based ads</a>
                   </li>
-
-                  
+                  <li className="nav-item me-3">
+                    <span className="text-white float-start" style={{ fontSize: '12px' }}>© 1996-2021, Amazon.com, Inc. or its affiliates</span>
+                  </li>
                 </ul>
-                <span className="text-white d-inline-block " style={{ fontSize: '12px' }}>© 1996-2021, Amazon.com, Inc. or its affiliates</span>
+
               </div>
             </div>
           </div>

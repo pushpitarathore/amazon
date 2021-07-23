@@ -18,9 +18,11 @@ class Home
     return (
       <Layout>
         <div className="p_main position-relative ">
-          <div className=" p_main1 p_main_top ">
-            <Carousel>
+          <div className=" p_main1 p_main_top  ">
+            <Carousel >
+           
               <Carousel.Item>
+                <div className=" olay w-100 h-100  position-absolute top-0 start-0"></div>
                 <img
                   className="d-block "
                   src="./images/slider/1.jpg"
@@ -29,6 +31,7 @@ class Home
 
               </Carousel.Item>
               <Carousel.Item>
+              <div className=" olay w-100 h-100  position-absolute top-0 start-0"></div>
                 <img
                   className="d-block "
                   src="./images/slider/2.jpg"
@@ -36,6 +39,7 @@ class Home
                 />
               </Carousel.Item>
               <Carousel.Item>
+              <div className=" olay w-100 h-100  position-absolute top-0 start-0"></div>
                 <img
                   className="d-block "
                   src="./images/slider/3.jpg"
@@ -43,6 +47,7 @@ class Home
                 />
               </Carousel.Item>
               <Carousel.Item>
+              <div className=" olay w-100 h-100  position-absolute top-0 start-0"></div>
                 <img
                   className="d-block "
                   src="./images/slider/4.jpg"
@@ -50,6 +55,7 @@ class Home
                 />
               </Carousel.Item>
               <Carousel.Item>
+              <div className=" olay w-100 h-100  position-absolute top-0 start-0"></div>
                 <img
                   className="d-block "
                   src="./images/slider/5.jpg"
@@ -57,6 +63,7 @@ class Home
                 />
               </Carousel.Item>
               <Carousel.Item>
+              <div className=" olay w-100 h-100  position-absolute top-0 start-0"></div>
                 <img
                   className="d-block "
                   src="./images/slider/6.jpg"
@@ -64,6 +71,7 @@ class Home
                 />
               </Carousel.Item>
               <Carousel.Item>
+              <div className=" olay w-100 h-100  position-absolute top-0 start-0"></div>
                 <img
                   className="d-block "
                   src="./images/slider/7.jpg"
@@ -71,6 +79,7 @@ class Home
                 />
               </Carousel.Item>
               <Carousel.Item>
+              <div className=" olay w-100 h-100  position-absolute top-0 start-0"></div>
                 <img
                   className="d-block "
                   src="./images/slider/8.jpg"
@@ -85,64 +94,64 @@ class Home
             <div className="p_main_bottom_1 m-0 mb-3 row">
               <div className="col p-2">
                 <div className="p_mainbox1 p-3 ">
-                <div className="p_mainbox1_inner w-100  h-100 ">
-                  <div className="row m-0" style={{height:'70px'}}>
-                    <div className="col-4 ">
-                      <FontAwesomeIcon style={{fontSize:'4em',color:'#aab7b7'}} icon={faUserCircle} />
-                     
-                    </div>
-                    <div className="col-8 ">
-                    <h4 className="fw-bolder m-0">Hi,<span className="custName">Pushpita</span></h4>
-                    <p style={{fontSize:'12px'}}>customer since 2019</p>
-                    </div>
-                    <p className="m-0 fw-bolder" style={{fontSize:'13px'}}>Top links for you</p>
-                    <div className="row w-100 m-0 p-0 p_toplinks">
-                      <div className="col-6 p-0   ">
-                        <a className="btn w-100 rounded-0 h-100" href="#">
-                          <img className="img-fluid" src="./images/main_images/1.1.jpg" />
-                          <p>your orders</p>
-                        </a>
+                  <div className="p_mainbox1_inner w-100  h-100 ">
+                    <div className="row m-0" style={{ height: '70px' }}>
+                      <div className="col-4 ">
+                        <FontAwesomeIcon style={{ fontSize: '4em', color: '#aab7b7' }} icon={faUserCircle} />
+
                       </div>
-                      <div className="col-6 p-0 ">
-                      <a className="btn w-100 rounded-0 h-100" href="#">
-                          <img className="img-fluid" src="./images/main_images/1.2.jpg" />
-                          <p>Mobile &amp; Accessories</p>
-                        </a>
+                      <div className="col-8 ">
+                        <h4 className="fw-bolder m-0">Hi,<span className="custName">Pushpita</span></h4>
+                        <p style={{ fontSize: '12px' }}>customer since 2019</p>
                       </div>
-                      <div className="col-6 p-0 ">
-                      <a className="btn w-100 rounded-0 h-100" href="#">
-                          <img className="img-fluid" src="./images/main_images/1.3.jpg" />
-                          <p>Fashion</p>
-                        </a>
-                      </div>
-                      <div className="col-6 p-0 ">
-                      <a className="btn w-100 rounded-0 h-100" href="#">
-                          <img className="img-fluid" src="./images/main_images/1.4.jpg" />
-                          <p>grocery</p>
-                        </a>
+                      <p className="m-0 fw-bolder" style={{ fontSize: '13px' }}>Top links for you</p>
+                      <div className="row w-100 m-0 p-0 p_toplinks">
+                        <div className="col-6 p-0   ">
+                          <a className="btn w-100 rounded-0 h-100" href="#">
+                            <img className="img-fluid" src="./images/main_images/1.1.jpg" />
+                            <p>your orders</p>
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 ">
+                          <a className="btn w-100 rounded-0 h-100" href="#">
+                            <img className="img-fluid" src="./images/main_images/1.2.jpg" />
+                            <p>Mobile &amp; Accessories</p>
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 ">
+                          <a className="btn w-100 rounded-0 h-100" href="#">
+                            <img className="img-fluid" src="./images/main_images/1.3.jpg" />
+                            <p>Fashion</p>
+                          </a>
+                        </div>
+                        <div className="col-6 p-0 ">
+                          <a className="btn w-100 rounded-0 h-100" href="#">
+                            <img className="img-fluid" src="./images/main_images/1.4.jpg" />
+                            <p>grocery</p>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  </div>
-                  <div className="p_mainbox1_inner d-none h-100 bg-danger ">
-                    <div className="w-100 bg-warning">
+                  <div className="p_mainbox1_inner d-none h-100 ">
+                    <div className="w-100 ">
                       <h5>Min 20% off |Toys &amp; Games</h5>
                       <div className="row  m-0 ">
-                        <div className="col-6 tbdr p-0">
-                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                        <div className="col-6  p-0">
+                          <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/1.jpg" />
                             Min 20% off | Games &amp; Puzzeles
                           </a>
 
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 ps-1" src="./images/main_images/2.jpg" />
                             Min 20% off | Pretnd &amp; Play
                           </a>
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/3.jpg" />
                             Min 20% off | Dolls &amp; Dollhouses
                           </a>
@@ -150,8 +159,8 @@ class Home
 
                         </div>
 
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 ps-1" src="./images/main_images/4.jpg" />
                             Min 20% off | Learning &amp; Education
                           </a>
@@ -164,25 +173,25 @@ class Home
               </div>
               <div className="col p-2">
                 <div className="p_mainbox1 p-3 ">
-                  <div className="p_mainbox1_inner w-100 h-100 bg-danger">
-                    <div className="w-100 bg-warning">
+                  <div className="p_mainbox1_inner w-100 h-100 ">
+                    <div className="w-100 ">
                       <h5>Everyday essentials</h5>
                       <div className="row  m-0 ">
-                        <div className="col-6 tbdr p-0">
-                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                        <div className="col-6  p-0">
+                          <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/5.jpg" />
                             Cleaning essentials
                           </a>
 
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 ps-1" src="./images/main_images/6.jpg" />
                             Immunity amp; healthCare
                           </a>
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/7.jpg" />
                             Women's personal care
                           </a>
@@ -190,8 +199,8 @@ class Home
 
                         </div>
 
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 ps-1" src="./images/main_images/8.jpg" />
                             Men's grooming
                           </a>
@@ -204,25 +213,25 @@ class Home
               </div>
               <div className="col p-2">
                 <div className="p_mainbox1 p-3 ">
-                  <div className="p_mainbox1_inner w-100 h-100 bg-danger">
-                    <div className="w-100 bg-warning">
+                  <div className="p_mainbox1_inner w-100 h-100 ">
+                    <div className="w-100 ">
                       <h5>Automotive essentials | Up to 60% off</h5>
                       <div className="row  m-0 ">
-                        <div className="col-6 tbdr p-0">
-                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                        <div className="col-6  p-0">
+                          <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/9.jpg" />
                             Cleaning Accessories
                           </a>
 
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 ps-1" src="./images/main_images/10.jpg" />
                             Tyre &amp; rim care
                           </a>
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/11.jpg" />
                             Helmets
                           </a>
@@ -230,8 +239,8 @@ class Home
 
                         </div>
 
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 ps-1" src="./images/main_images/12.jpg" />
                             Veccum cleaner
                           </a>
@@ -244,11 +253,11 @@ class Home
               </div>
               <div className="col">
                 <div className="row ">
-                  <div className="col-12 tbdr bg-white mb-3 p-3" style={{ 'height': 150 + 'px' }}>
+                  <div className="col-12  bg-white mb-3 p-3" style={{ 'height': 150 + 'px' }}>
                     <h4 className="p-2">Sign in for your best experience</h4>
                     <button className="btn btn-warning w-100 rounded-1 border border-secondary">Sign in securely</button>
                   </div>
-                  <div className="col-12 p-0  tbdr bg-white " style={{ 'height': 254 + 'px' }}>
+                  <div className="col-12 p-0  bg-white " style={{ 'height': 240 + 'px' }}>
                     <img className="img-fluid h-100 w-100" src="./images/main_images/13.jpg" />
                   </div>
                 </div>
@@ -257,30 +266,30 @@ class Home
             <div className="p_main_bottom_2 row m-0 mb-3">
               <div className="col p-2">
                 <div className="p_mainbox1 p-3">
-                  <div className="p_mainbox1_inner  h-100 bg-danger" >
-                    <div className="w-100 bg-warning">
+                  <div className="p_mainbox1_inner  h-100 " >
+                    <div className="w-100 ">
                       <h5>Up to 85% off | Women's fashion from small</h5>
                       <div className="row  m-0 ">
-                        <div className="col-6 tbdr p-0">
-                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                        <div className="col-6  p-0">
+                          <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/22.jpg" />
                             Sarees &amp; Kurtas
                           </a>
 
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 ps-1" src="./images/main_images/23.jpg" />
                             T-shirs, tops &amp; dresses                          </a>
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/24.jpg" />
                             Women's footwear
                           </a>
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/25.jpg" />
                             Handbags,sling bags and combos
                           </a>
@@ -292,25 +301,25 @@ class Home
               </div>
               <div className="col p-2">
                 <div className="p_mainbox1 p-3 ">
-                  <div className="p_mainbox1_inner  h-100 bg-danger">
-                    <div className="w-100 bg-warning">
+                  <div className="p_mainbox1_inner  h-100 ">
+                    <div className="w-100 ">
                       <h5>Home essentials | Amazon Brands &amp; more</h5>
                       <div className="row  m-0 ">
-                        <div className="col-6 tbdr p-0">
-                          <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                        <div className="col-6  p-0">
+                          <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/14.jpg" />
                             Bedsheet curtains &amp; more
                           </a>
 
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 ps-1" src="./images/main_images/15.jpg" />
                             Cloth organizers,boxes &amp; baskets
                           </a>
                         </div>
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 pe-1" src="./images/main_images/16.jpg" />
                             Wallstickers &amp; clocks
                           </a>
@@ -318,8 +327,8 @@ class Home
 
                         </div>
 
-                        <div className="col-6 p-0 tbdr">
-                          <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                        <div className="col-6 p-0 ">
+                          <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                             <img className="img-fluid h-75 ps-1" src="./images/main_images/17.jpg" />
                             Smart bulbs &amp; string lights
                           </a>
@@ -333,25 +342,25 @@ class Home
               <div className="col">
                 <div className="col p-2">
                   <div className="p_mainbox1 p-3 ">
-                    <div className="p_mainbox1_inner  h-100 bg-danger">
-                      <div className="w-100 bg-warning">
+                    <div className="p_mainbox1_inner  h-100 ">
+                      <div className="w-100">
                         <h5>Home essentials | Amazon Brands &amp; more</h5>
                         <div className="row  m-0 ">
-                          <div className="col-6 tbdr p-0">
-                            <a href="#" className="p-0 btn btn-success   rounded-0 text-start h-100 w-100">
+                          <div className="col-6  p-0">
+                            <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
                               <img className="img-fluid h-75 pe-1" src="./images/main_images/18.jpg" />
                               Clothing
                             </a>
 
                           </div>
-                          <div className="col-6 p-0 tbdr">
-                            <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                               <img className="img-fluid h-75 ps-1" src="./images/main_images/19.jpg" />
                               Footwear
                             </a>
                           </div>
-                          <div className="col-6 p-0 tbdr">
-                            <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                               <img className="img-fluid h-75 pe-1" src="./images/main_images/20.jpg" />
                               Watches
                             </a>
@@ -359,8 +368,8 @@ class Home
 
                           </div>
 
-                          <div className="col-6 p-0 tbdr">
-                            <a href="#" className="p-0 btn btn-success rounded-0 text-start h-100 w-100">
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
                               <img className="img-fluid h-75 ps-1" src="./images/main_images/21.jpg" />
                               Bags &amp; luggage
                             </a>
@@ -374,8 +383,8 @@ class Home
               </div>
               <div className="col p-2">
                 <div className="p_mainbox1 p-3">
-                  <div className="p_mainbox1_inner h-100 bg-danger">
-                    <div className=" bg-warning w-100">
+                  <div className="p_mainbox1_inner h-100 ">
+                    <div className="  w-100">
                       <h5>Up to 50% off | Electronics &amp; accessories</h5>
                       <img className="img-fluid h-75 w-100 " src="./images/main_images/26.jpg" />
                     </div>
@@ -392,9 +401,9 @@ class Home
               <Carousel id="carouselExampleControls2"  >
                 <Carousel.Item>
                   <div className="imgcont row ">
-              
+
                     <div className="col p-0 h-100 w-100 text-center">
-                    <img className="img-fluid" src="./images/main_images/27.jpg" />
+                      <img className="img-fluid" src="./images/main_images/27.jpg" />
                     </div>
                     <div className="col p-0 text-center">
                       <img className="img-fluid" src="./images/main_images/28.jpg" />
@@ -520,16 +529,408 @@ class Home
               </Carousel>
 
             </div>
-            <div className="p_main_bottom_5 mb-3 tbdr"></div>
+            
+
+              <div className="p_main_bottom_5 row m-0 mb-3">
+                <div className="col p-2">
+                  <div className="p_mainbox1 p-3">
+                    <div className="p_mainbox1_inner  h-100 " >
+                      <div className="w-100 ">
+                        <h5>Up to 85% off | Women's fashion from small</h5>
+                        <div className="row  m-0 ">
+                          <div className="col-6  p-0">
+                            <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/22.jpg" />
+                              Sarees &amp; Kurtas
+                            </a>
+
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 ps-1" src="./images/main_images/23.jpg" />
+                              T-shirs, tops &amp; dresses                          </a>
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/24.jpg" />
+                              Women's footwear
+                            </a>
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/25.jpg" />
+                              Handbags,sling bags and combos
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col p-2">
+                  <div className="p_mainbox1 p-3 ">
+                    <div className="p_mainbox1_inner  h-100 ">
+                      <div className="w-100 ">
+                        <h5>Home essentials | Amazon Brands &amp; more</h5>
+                        <div className="row  m-0 ">
+                          <div className="col-6  p-0">
+                            <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/14.jpg" />
+                              Bedsheet curtains &amp; more
+                            </a>
+
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 ps-1" src="./images/main_images/15.jpg" />
+                              Cloth organizers,boxes &amp; baskets
+                            </a>
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/16.jpg" />
+                              Wallstickers &amp; clocks
+                            </a>
+
+
+                          </div>
+
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 ps-1" src="./images/main_images/17.jpg" />
+                              Smart bulbs &amp; string lights
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" className="btn btn-link">See More</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="col p-2">
+                    <div className="p_mainbox1 p-3 ">
+                      <div className="p_mainbox1_inner  h-100 ">
+                        <div className="w-100">
+                          <h5>Home essentials | Amazon Brands &amp; more</h5>
+                          <div className="row  m-0 ">
+                            <div className="col-6  p-0">
+                              <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 pe-1" src="./images/main_images/18.jpg" />
+                                Clothing
+                              </a>
+
+                            </div>
+                            <div className="col-6 p-0 ">
+                              <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 ps-1" src="./images/main_images/19.jpg" />
+                                Footwear
+                              </a>
+                            </div>
+                            <div className="col-6 p-0 ">
+                              <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 pe-1" src="./images/main_images/20.jpg" />
+                                Watches
+                              </a>
+
+
+                            </div>
+
+                            <div className="col-6 p-0 ">
+                              <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 ps-1" src="./images/main_images/21.jpg" />
+                                Bags &amp; luggage
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" className="btn btn-link">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col p-2">
+                  <div className="p_mainbox1 p-3">
+                    <div className="p_mainbox1_inner h-100 ">
+                      <div className="  w-100">
+                        <h5>Up to 50% off | Electronics &amp; accessories</h5>
+                        <img className="img-fluid h-75 w-100 " src="./images/main_images/26.jpg" />
+                      </div>
+                      <a href="#" className="btn btn-link">See More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
             <div className="p_main_bottom_6 mb-3 tbdr"></div>
             <div className="p_main_botton_7 mb-3 tbdr"></div>
             <div className="p_main_botton_8 mb-3 text-center ">
               <img className="img-fluid" src="./images/main_images/banner.jpg" />
             </div>
-            <div className="p_main_botton_9 mb-3 tbdr"></div>
+            <div className="p_main_bottom_9 row m-0 mb-3">
+                <div className="col p-2">
+                  <div className="p_mainbox1 p-3">
+                    <div className="p_mainbox1_inner  h-100 " >
+                      <div className="w-100 ">
+                        <h5>Up to 85% off | Women's fashion from small</h5>
+                        <div className="row  m-0 ">
+                          <div className="col-6  p-0">
+                            <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/22.jpg" />
+                              Sarees &amp; Kurtas
+                            </a>
+
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 ps-1" src="./images/main_images/23.jpg" />
+                              T-shirs, tops &amp; dresses                          </a>
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/24.jpg" />
+                              Women's footwear
+                            </a>
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/25.jpg" />
+                              Handbags,sling bags and combos
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col p-2">
+                  <div className="p_mainbox1 p-3 ">
+                    <div className="p_mainbox1_inner  h-100 ">
+                      <div className="w-100 ">
+                        <h5>Home essentials | Amazon Brands &amp; more</h5>
+                        <div className="row  m-0 ">
+                          <div className="col-6  p-0">
+                            <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/14.jpg" />
+                              Bedsheet curtains &amp; more
+                            </a>
+
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 ps-1" src="./images/main_images/15.jpg" />
+                              Cloth organizers,boxes &amp; baskets
+                            </a>
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/16.jpg" />
+                              Wallstickers &amp; clocks
+                            </a>
+
+
+                          </div>
+
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 ps-1" src="./images/main_images/17.jpg" />
+                              Smart bulbs &amp; string lights
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" className="btn btn-link">See More</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="col p-2">
+                    <div className="p_mainbox1 p-3 ">
+                      <div className="p_mainbox1_inner  h-100 ">
+                        <div className="w-100">
+                          <h5>Home essentials | Amazon Brands &amp; more</h5>
+                          <div className="row  m-0 ">
+                            <div className="col-6  p-0">
+                              <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 pe-1" src="./images/main_images/18.jpg" />
+                                Clothing
+                              </a>
+
+                            </div>
+                            <div className="col-6 p-0 ">
+                              <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 ps-1" src="./images/main_images/19.jpg" />
+                                Footwear
+                              </a>
+                            </div>
+                            <div className="col-6 p-0 ">
+                              <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 pe-1" src="./images/main_images/20.jpg" />
+                                Watches
+                              </a>
+
+
+                            </div>
+
+                            <div className="col-6 p-0 ">
+                              <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 ps-1" src="./images/main_images/21.jpg" />
+                                Bags &amp; luggage
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" className="btn btn-link">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col p-2">
+                  <div className="p_mainbox1 p-3">
+                    <div className="p_mainbox1_inner h-100 ">
+                      <div className="  w-100">
+                        <h5>Up to 50% off | Electronics &amp; accessories</h5>
+                        <img className="img-fluid h-75 w-100 " src="./images/main_images/26.jpg" />
+                      </div>
+                      <a href="#" className="btn btn-link">See More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
             <div className="p_main_botton_10 mb-3 tbdr"></div>
             <div className="p_main_botton_11 mb-3 tbdr"></div>
-            <div className="p_main_botton_12 mb-3 tbdr"></div>
+            <div className="p_main_bottom_12 row m-0 mb-3">
+                <div className="col p-2">
+                  <div className="p_mainbox1 p-3">
+                    <div className="p_mainbox1_inner  h-100 " >
+                      <div className="w-100 ">
+                        <h5>Up to 85% off | Women's fashion from small</h5>
+                        <div className="row  m-0 ">
+                          <div className="col-6  p-0">
+                            <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/22.jpg" />
+                              Sarees &amp; Kurtas
+                            </a>
+
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 ps-1" src="./images/main_images/23.jpg" />
+                              T-shirs, tops &amp; dresses                          </a>
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/24.jpg" />
+                              Women's footwear
+                            </a>
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/25.jpg" />
+                              Handbags,sling bags and combos
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col p-2">
+                  <div className="p_mainbox1 p-3 ">
+                    <div className="p_mainbox1_inner  h-100 ">
+                      <div className="w-100 ">
+                        <h5>Home essentials | Amazon Brands &amp; more</h5>
+                        <div className="row  m-0 ">
+                          <div className="col-6  p-0">
+                            <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/14.jpg" />
+                              Bedsheet curtains &amp; more
+                            </a>
+
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 ps-1" src="./images/main_images/15.jpg" />
+                              Cloth organizers,boxes &amp; baskets
+                            </a>
+                          </div>
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 pe-1" src="./images/main_images/16.jpg" />
+                              Wallstickers &amp; clocks
+                            </a>
+
+
+                          </div>
+
+                          <div className="col-6 p-0 ">
+                            <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                              <img className="img-fluid h-75 ps-1" src="./images/main_images/17.jpg" />
+                              Smart bulbs &amp; string lights
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" className="btn btn-link">See More</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="col p-2">
+                    <div className="p_mainbox1 p-3 ">
+                      <div className="p_mainbox1_inner  h-100 ">
+                        <div className="w-100">
+                          <h5>Home essentials | Amazon Brands &amp; more</h5>
+                          <div className="row  m-0 ">
+                            <div className="col-6  p-0">
+                              <a href="#" className="p-0 btn   rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 pe-1" src="./images/main_images/18.jpg" />
+                                Clothing
+                              </a>
+
+                            </div>
+                            <div className="col-6 p-0 ">
+                              <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 ps-1" src="./images/main_images/19.jpg" />
+                                Footwear
+                              </a>
+                            </div>
+                            <div className="col-6 p-0 ">
+                              <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 pe-1" src="./images/main_images/20.jpg" />
+                                Watches
+                              </a>
+
+
+                            </div>
+
+                            <div className="col-6 p-0 ">
+                              <a href="#" className="p-0 btn rounded-0 text-start h-100 w-100">
+                                <img className="img-fluid h-75 ps-1" src="./images/main_images/21.jpg" />
+                                Bags &amp; luggage
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" className="btn btn-link">See More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col p-2">
+                  <div className="p_mainbox1 p-3">
+                    <div className="p_mainbox1_inner h-100 ">
+                      <div className="  w-100">
+                        <h5>Up to 50% off | Electronics &amp; accessories</h5>
+                        <img className="img-fluid h-75 w-100 " src="./images/main_images/26.jpg" />
+                      </div>
+                      <a href="#" className="btn btn-link">See More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
             <div className="p_main_botton_13mb-3 tbdr"></div>
             <div className="p_main_botton_14 mb-3 tbdr"></div>
           </div>

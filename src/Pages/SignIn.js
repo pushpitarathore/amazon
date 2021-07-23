@@ -13,10 +13,11 @@ class SignIn extends Component {
         return (
             <>
         
-                <div className=" row m-0 justify-content-center signincont">
+                <div className=" row m-0  justify-content-center signincont">
                     <div className="col-3  ">
-                    <a href="#" className="d-block m-3mx-auto  position-relative">
-                    <div className="mx-auto position-absolute spritesheet"></div>
+                    <a href="#" className="d-block mx-auto position-relative m-3 p_amzn_logo_box p_amznlogo amazonlogo   ">
+                        <div className="position-absolute p_in_box  amazonlogo  "></div>
+                    
                     </a>
                         <form className="border p-3">
                             <h3>Sign-In</h3>
@@ -24,7 +25,7 @@ class SignIn extends Component {
                                 <label for="exampleFormControlInput1" class="form-label ">Email or mobile phone number</label>
                                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" />
                             </div>
-                            <button type="submit" className="btn btn-warning  w-100 mb-3 border">Continue</button>
+                            <button type="submit" className="btn amznbtn  w-100 mb-3 border">Continue</button>
                             <p style={{ fontSize: '13px' }}>By continuing, you agree to Amazon's<a href="#"> Conditions of Use </a>and <a href="#">Privacy Notice.</a></p>
                             <a style={{ fontSize: '13px' }} href="#">Need help?</a>
                         </form>
@@ -32,21 +33,23 @@ class SignIn extends Component {
                         <button className="btn-outline-light text-dark  btn btn-light w-100 border border-secondary mb-4">Create your Amazon Account</button>
                     </div>
                 </div>
-                <footer style={{fontSize:'12px'}}>
-                    <ul class="nav justify-content-center mt-4">
-                        <li class="nav-item">
-                            <a class="nav-link"  href="#"> Conditions of Use </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> Privacy Notice </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">help</a>
-                        </li>
-                        
-                    </ul>
-                    <span className=" d-block text-center">© 1996-2021, Amazon.com, Inc. or its affiliates</span>
-                </footer>
+                <footer className="" style={{fontSize:'12px'}}>
+                        <div className="p_gradient  mt-4"></div>
+                        <div>
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item border-end me-2">
+                                    <a class="nav-link p-0 me-2 " href="#">Condition of Use</a>
+                                </li>
+                                <li class="nav-item border-end me-2 ">
+                                    <a class="nav-link p-0 me-2" href="#">Privecy otice</a>
+                                </li>
+                                <li class="nav-item">
+                                <span className="">© 2012-2020, Amazon.com, Inc. and its affiliates</span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </footer>
             </>
 
         )

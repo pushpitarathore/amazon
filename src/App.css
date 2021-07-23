@@ -1,20 +1,105 @@
+.p_a_logo{
+  background: url('https://images-eu.ssl-images-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png');
+}
+.p_user_pos{
+ width: 30px;
+ height: 30px;
+ background-position: 214px -339px; 
+}
+.p_logo_position{
+  background-position: -8px -46px;
+}
+.p_home_a_box{
+  width: 100px;
+  height: 35px;
+}
+.p_amzn_logo_box{
+  width: 105px;
+  height: 36px;
+}
+input:focus,button:focus{
+  box-shadow: none !important;
+}
+.p_tabpane .nav-link.active{
+  border-bottom:2px solid orangered !important;
+  background: transparent;
+  color:#000;
+}
+.p_amznlogo{
+  background-position: -4px -128px !important; 
+}
+.p_in_box{
+  width:16px ;
+  height: 17px;
+   top:4px;
+  right:-18px ;
+  background-position: -228px -205px !important;
+}
+.p_cros_pos{
+  width:24px ;
+  height: 29px;
+  background-position: 161px -287px;
+}
 /**************************Home css start******************************************/
+.p_arw_left{
+  width: 12px;
+  height: 20px;
+  background-position: 214px -287px;
+}
+.p_menu_pos{
+  width: 23px;
+  height: 23px;
+  background-position: 214px -253px; 
+}
+.p_cartbox{
+  width:47px;
+  height:42px ;
+  background-position: 134px -330px;
+}
+.p_loc_pos{
+  height: 26px;
+  width: 22px;
+  background-position: -70px -304px;
+}
+.p_globe_pos{
+  width:15px ;
+  height:17px ;
+  background-position: 64px -25px !important;
+}
+.p_updown_arw_pos{
+  width: 10px;
+  height: 13px;
+  background-position: -64px -4px !important;
+}
+.flag_sheet{
+  background: url('https://m.media-amazon.com/images/S/sash/rzrQQdi0aRm6Dap.png');
+}
+.p_flag_box{
+  width: 26px;
+  height: 20px;
+  background-position: 0px -165px;
+}
+/* .p_arrw_pos{
+ width: 20px;
+ height: 11px;
+ background-position: 0px 0px !important; 
+}   */
+.p_search_pos{
+  width: 27px;
+  height: 24px;
+  background-position: -8px -290px;
+}
 .tbdr{
   border:1px dashed #000;
 }
 header{
   position:relative;
-z-index:10000;
-
+z-index:1000000000;
 } 
-button:focus{
-  box-shadow:none !important;
-}
 .p_header_top{
   height:60px;
-  z-index: 10000;
-  background:#131921;
-
+  z-index: 10000000;
+  background:#131921; 
 }
 .hform input:focus{
   border:none !important;
@@ -27,6 +112,25 @@ button:focus{
 .hform input{
   border:none !important;
 }
+.Allnavmenu{
+  width: 365px;
+  z-index:10000000000; 
+  transition: all 0.3 ease-in-out;
+}
+.l0{
+  left:0px;
+}
+.l366{
+  left:-366px;
+}
+.Allnavclosebtn{
+  left:370px;
+  z-index:10000000000;
+}
+.P_navmenuheight{
+  height:720px !important ;
+  padding-bottom: 100px;
+}
 .hformsbmt{
   border-radius: 7px !important;
   border-top-left-radius: 0px !important;
@@ -35,7 +139,6 @@ button:focus{
 .formBorder{
   border:3px solid #ff9900 !important;
 }
-
 .p_header_top > button:hover{
   outline:1px solid #fff;
 }
@@ -45,11 +148,10 @@ button:focus{
 .mhul li a{
   color: #333;
   padding-left: 30px;
-
 }
 .mhul li a:hover{
-  background: #eaeded;
-  color: #333;
+  background: #eaeded !important;
+  color: #333 !important;
 }
 .p_signin_model{
   display: block !important;
@@ -62,8 +164,7 @@ button:focus{
   box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
   transition: all 0.1s linear 0.1s;
   opacity:0;
-  visibility: hidden;
-  
+  visibility: hidden; 
 }
 .p_ht_signin_model_button:hover > div.p_ht_signin_model{
   opacity: 1 ;
@@ -82,25 +183,9 @@ button:focus{
   text-decoration: underline;
   color:#f0c350;
 }
-.headermodal{
-  position: absolute !important;
-  z-index: 100004 !important;
-  transition: all 0.3 ease-out !important;
-  top:-30px !important;
-  max-width: 365px !important;
-  border-radius: 0px !important;
-}
-.l934{
-  left:-934px !important;
-}
-.l433{
-  left:-500px !important;
-}
-
 .p_header_bottom{
   height:39px;
-
-  background: #232f3e;
+background: #232f3e;
 }
 .p_header_bottom a {
   /* TRBL */
@@ -109,11 +194,10 @@ button:focus{
   font-size:15px;
   color:#fff;
   margin-top:3px;
-
 }
 .overlay{
   position: fixed;
-  z-index:10000;
+  z-index:1000000;
   transition:all linear 0.2s;
   background: rgba(0,0,0,0.5);
 }
@@ -138,15 +222,12 @@ visibility: hidden;
   height: 0; 
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  
-  border-bottom: 10px solid #fff;
- 
+  border-bottom: 10px solid #fff; 
 }
 .p_aup_primeBox{
   top:-10px;
   left:45px;
 }
-
 .p_header_bottom a:hover{
   outline:1px solid #fff;
   color:#fff;
@@ -167,7 +248,6 @@ visibility: hidden;
 .p_aup_ht_countrydd{
   left:22px;
   top:-10px;
-
 }
 .p_ht_countrydd_btn:hover > div.p_ht_countrydd{
   opacity: 1;
@@ -175,31 +255,31 @@ visibility: hidden;
 }
 .p_main{
  min-height:5271px;
- border:1px dashed black;
  background:#eaeded
 }
 .p_main_top .carousel-control-prev ,.p_main_top .carousel-control-next{
   width:5% !important;
   height:50% !important;
 }
+.p_main_top .carousel-item{
+  position: relative;
+}
+.olay{
+  background-image: linear-gradient(transparent 30%,#EAEDED 70%);
+}
 .p_main1{
-  height: 600px;
-  border: 1px dashed orange;
+  height: 600px; 
 }
 .p_main_bottom{
-  border:1px dashed blue;
-  
   top:250px;
   left:20px;
   width:97%; 
 }
 .p_main_bottom_1{
-  border:1px dashed black;
 
 }
 .p_main_bottom_1 > div{
 height:423px;
-border:1px dashed black;
 }
 .p_mainbox1{
 height:98%;
@@ -220,29 +300,21 @@ background:#fff;
 }
 .p_mainbox1_inner .col-6{
   height:140px ;
- 
   }
   .p_mainbox1_inner .row a{
     font-size: 12px;
   }
-
 .p_mainbox1_inner a{
-  text-decoration: none;
-  
+  text-decoration: none;  
 }
-
-
 .p_main_bottom_2 >div{
-  height:421px;
-  border:1px dashed blue;
+  height:421px; 
 }
 .p_main_bottom_3{
-  height:364px;
-  border:1px dashed black;
+  height:364px; 
 }
 .imgcont{
   height:300px;
-
 }
 .imgcont >div {
   border:1px dashed black;
@@ -273,7 +345,6 @@ background:#fff;
   box-shadow:2px 0px 2px 2px rgba(0,0,0,0.3) ;
 }
 #carouselExampleControls2 .carousel-control-next{
-  /*X  Y B  S  C */
 box-shadow:-2px 0px 2px 2px rgba(0,0,0,0.3) ;
 }
 .p_main_bottom_4{
@@ -352,16 +423,13 @@ footer{
   text-decoration: underline;
   color:#fff;
 }
-
 .p_footer_top{
   height:452px ;
   background: #232f3e;
 }
-
 .p_footer_top a{
   padding: 4px 0px;
   color:#fff !important;
-  
 } 
 .p_footer_top a:hover{
   text-decoration: underline;
@@ -374,7 +442,7 @@ footer{
   height:232px;
   background:#131a22;
 }
-.p_footer_bottom ul{
+.p_footer_bottom .p_footer_ul ul{
   width:50%;
 }
 .p_footer_bottom ul li{
@@ -394,8 +462,6 @@ footer{
   background: transparent !important;
 }
 /**************************Home css end******************************************/
-
-
 /**************************Detail css start******************************************/
 .pricecolor{
   color:orangered;
@@ -460,9 +526,7 @@ footer{
   top:-10px;
   left:87px;
 } 
-
 /**************************Detail css end******************************************/
-
 /*******************************Sign-In css start**************************************/
 .amznbtn{
   /*background-image: linear-gradient(direction, color-stop1, color-stop2, ...);*/
@@ -471,15 +535,6 @@ footer{
 .signincont{
 
 }
-
-
-
-
-
-
-
-
-
 /*******************************Sign-In css end**************************************/
 /*******************************Search css end**************************************/
 .p_srch_main{
@@ -504,7 +559,6 @@ height:47px;
 }
 .p_anch_dec a{
   text-decoration: none;
-  
 }
 .p_anch_dec a:hover{
 color:#c7511f !important;
@@ -514,7 +568,6 @@ text-decoration: underline;
   text-decoration:none !important;
 }
 .sprsheet{
-
   background:url('https://m.media-amazon.com/images/S/sash/3-fm1Jbg4IHlyhq.png')
 }
 .amazonlogo{
@@ -523,13 +576,10 @@ text-decoration: underline;
 .sprsheetcont{
   width:98px;
   height: 20px;
-  /* line-height: 19px;
-  text-align: center !important; */
 }
 .p_prime_sheet{
 background-position: -6px -489px;
 }
-
 .p_5star{
   background-position: -98px -110px; 
 }
@@ -556,16 +606,25 @@ background-position: -6px -489px;
 .srch_arrow{
   background-position: -11px -52px;
 }
-
 .p_aside_star{
   height: 20px;
   width: 98px;
 }
-
 /*******************************Search css end**************************************/
-.p_cart_main{
-  height:400px;
+/*******************************Cart css start**************************************/
+.p_checkbox{
+  height: 22px;
+  width: 22px;
 }
+.p_check_dimension{
+background-position:-455px -142px ;
+}
+.accordion-button:focus{
+ border-color:#fff !important ;
+ box-shadow: none !important;
+ outline: #eaeded;
+}
+/******************************cart css end**************************************/
 /*******************************Delivery css start**************************************/
 .delivery > header{
   height: 85px;
@@ -576,4 +635,16 @@ background-position: -6px -489px;
 .p_delivery_main{
   
 }
+.p_gradient{
+  height: 44px;
+  background-image:-webkit-linear-gradient(top,rgba(0,0,0,0.03),#fff)
+}
 /*******************************Delivery css end**************************************/
+/*******************************order history start**************************************/
+.p_odr_his_main{
+  
+}
+.p_bread_crumb{
+  --bs-breadcrumb-divider: '>' 
+}
+/*******************************order history end**************************************/
