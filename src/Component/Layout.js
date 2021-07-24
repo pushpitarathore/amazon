@@ -9,18 +9,19 @@ import Footer from './Footer'
 **/
 
 class Layout extends Component {
- state = {}
- render() {
-  return(
-    <React.Fragment>
-    
-      <Header></Header>
-      {this.props.children}
-      <Footer></Footer>
-    </React.Fragment>
+  state = {}
+  render() {
+    return (
+      <React.Fragment>
+        <div className="bgcolor"style={{width:'100%'}}>
+          <Header></Header>
+          {this.props.children}
+          <Footer></Footer>
+        </div>
+      </React.Fragment>
     )
-   }
- }
+  }
+}
 
 
 Layout.propTypes = {}

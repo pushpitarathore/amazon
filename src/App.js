@@ -13,6 +13,8 @@ import Register from './Pages/Register';
 import Cart from './Pages/Cart';
 import Delivery from './Pages/Delivery';
 import OrderHistory from './Pages/OrderHistory';
+import YourAccount from './Pages/YourAccount';
+import WishList from './Pages/WishList';
 
 
 
@@ -35,9 +37,11 @@ class App extends Component {
         <Route path="/signin" component={SignIn}></Route>
          <Route path="/search" component={Search}></Route>
          <Route path="/cart" component={Cart}></Route>
+         <Route path="/youraccount" component={YourAccount}></Route>
          <Route path="/register" component={Register}></Route>
         <Route path="/checkout" component={Checkout}></Route>
         <Route path="/delivery" component={Delivery}></Route>
+        <Route path="/youraccount" component={WishList}></Route>
         <Route path="/orderhistory" component={OrderHistory}></Route>
         
         

@@ -1,3 +1,6 @@
+.bgcolor{
+  background: #eaeded !important;
+}
 .p_a_logo{
   background: url('https://images-eu.ssl-images-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png');
 }
@@ -624,6 +627,9 @@ background-position:-455px -142px ;
  box-shadow: none !important;
  outline: #eaeded;
 }
+.p_emptycart{
+  height: 246px;
+}
 /******************************cart css end**************************************/
 /*******************************Delivery css start**************************************/
 .delivery > header{
@@ -648,3 +654,8 @@ background-position:-455px -142px ;
   --bs-breadcrumb-divider: '>' 
 }
 /*******************************order history end**************************************/
+/*******************************Your Account start**************************************/
+.p_account_main{
+  height: 2000px;
+}
+/*******************************Your Account end**************************************/

@@ -5,6 +5,7 @@ import {  faChevronRight, faChevronUp, faCaretDown,  } from '@fortawesome/free-s
 import Flag from 'react-world-flags';
 import { Modal } from 'react-bootstrap';
 import Ember from '../assets/font/ember/AmazonEmber_Rg.ttf';
+import {Link} from 'react-router-dom';
 const myCustomFont = `
 @font-face{
   font-family:'emberRg';
@@ -162,13 +163,13 @@ class Header extends Component {
             <h5 className="fw-bolder ps-4 ">Help &amp; Settings</h5>
             <ul className="nav flex-column border-bottom pt-1 mb-2 mhul">
               <li className="nav-item">
-                <a className="nav-link " href="#">Your Account</a>
+                <Link to="/youraccount" className="nav-link ">Your Account</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Coustmer Service</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link " href="#">Sign In</a>
+                <Link to="/signin" className="nav-link " >Sign In</Link>
               </li>
 
             </ul>
@@ -263,8 +264,8 @@ class Header extends Component {
               <div className=" p_ht_signin_model position-absolute bg-white border rounded-1 ">
                 <div className="arrow-up  position-absolute p_aup_ht_signin_model"></div>
                 <div>
-                  <button className=" btn btn-warning  w-50 mt-3 mb-1 ">Sign in</button>
-                  <p className="text-dark border-bottom mb-4">New Coustmer?<a className="btn btn-link " href="#">Start here.</a></p>
+                  <Link  to="/signin" className=" btn btn-warning  w-50 mt-3 mb-1 ">Sign in</Link>
+                  <p className="text-dark border-bottom mb-4">New Coustmer?<Link  to="/register" className="btn btn-link " >Start here.</Link></p>
                 </div>
                 <div className="row m-0  ">
                   <div className="col text-start ms-3 border-end ">
@@ -294,10 +295,13 @@ class Header extends Component {
                     <ul className="nav flex-column">
                       <h5 className="text-dark fw-bold">Your Account</h5>
                       <li className="nav-item">
-                        <a className="nav-link " href="#">Your Account</a>
+                        <Link className="nav-link " to="/youraccount">Your Account</Link>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">Your Wish list</a>
+                        <Link to="/orderhistory" className="nav-link" >Your orders</Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/wishlist" className="nav-link" >Your wish List</Link>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="#">Your Recommendations</a>
@@ -330,10 +334,10 @@ class Header extends Component {
             </button>
             <button className="h-100 me-1 btn text-white  " style={{ 'width': '7%',fontSize:'13px' }}>Return
               <div className="fw-bold">&amp; orders</div></button>
-            <button className="h-100 me-1 ps-0 btn p-0   text-white fw-bold " style={{ 'width': '6%',fontSize:'13px' }}>
+            <Link to="/cart" className="h-100 me-1 ps-0 btn p-0   text-white fw-bold " style={{ 'width': '6%',fontSize:'13px' }}>
               <span className="d-block pe-0 float-start p_cartbox p_a_logo "></span>
               <span className="text-white float-start ps-0 pt-3">Cart</span>
-            </button>
+            </Link>
           </div>
           <div className="p_header_bottom">
             <ul className=" ms-3 nav float-start">
