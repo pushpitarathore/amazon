@@ -151,7 +151,7 @@ class Cart extends Component {
                             <div className="mt-4  row w-100 m-0 ">
 
                                 <div className="col-1 p-0">
-                                    <div className="p_checkbox  p_check_dimension sprsheet "></div>
+                                    <div className="p_checkbox  sprsheet "></div>
                                 </div>
                                 <div className="col-11 p-0 " style={{ fontSize: '13px' }}>
                                     <p>Your order is eligible for FREE Delivery. Select this option at checkout.<a href="#"> Details</a></p>

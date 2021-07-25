@@ -132,9 +132,9 @@ class Delivery extends Component {
                         </div>
                     </div>
                     <footer className="" style={{fontSize:'12px'}}>
-                        <div className="p_gradient  mt-4"></div>
+                        <div className="p_gradient  mt-4 "></div>
                         <div>
-                            <ul class="nav justify-content-center">
+                            <ul class="nav justify-content-center mt-0">
                                 <li class="nav-item border-end me-2">
                                     <a class="nav-link p-0 me-2 " href="#">Condition of Use</a>
                                 </li>

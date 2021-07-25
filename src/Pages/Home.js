@@ -263,7 +263,7 @@ class Home
                 </div>
               </div>
             </div>
-            <div className="p_main_bottom_2 row m-0 mb-3">
+            <div className="p_main_bottom_2 p_main_bottom_1 row m-0 mb-3">
               <div className="col p-2">
                 <div className="p_mainbox1 p-3">
                   <div className="p_mainbox1_inner  h-100 " >
@@ -531,7 +531,7 @@ class Home
             </div>
             
 
-              <div className="p_main_bottom_5 row m-0 mb-3">
+              <div className="p_main_bottom_5 p_main_bottom_1 row m-0 mb-3">
                 <div className="col p-2">
                   <div className="p_mainbox1 p-3">
                     <div className="p_mainbox1_inner  h-100 " >
@@ -662,12 +662,12 @@ class Home
                 </div>
               </div>
             
-            <div className="p_main_bottom_6 mb-3 tbdr"></div>
-            <div className="p_main_botton_7 mb-3 tbdr"></div>
+            <div className="p_main_bottom_6 p_main_bottom_4 mb-3 tbdr"></div>
+            <div className="p_main_botton_7 p_main_bottom_4 mb-3 tbdr"></div>
             <div className="p_main_botton_8 mb-3 text-center ">
               <img className="img-fluid" src="./images/main_images/banner.jpg" />
             </div>
-            <div className="p_main_bottom_9 row m-0 mb-3">
+            <div className="p_main_bottom_9 p_main_bottom_1 row m-0 mb-3">
                 <div className="col p-2">
                   <div className="p_mainbox1 p-3">
                     <div className="p_mainbox1_inner  h-100 " >
@@ -798,9 +798,9 @@ class Home
                 </div>
               </div>
             
-            <div className="p_main_botton_10 mb-3 tbdr"></div>
-            <div className="p_main_botton_11 mb-3 tbdr"></div>
-            <div className="p_main_bottom_12 row m-0 mb-3">
+            <div className="p_main_botton_10 p_main_bottom_4 mb-3 tbdr"></div>
+            <div className="p_main_botton_11 p_main_bottom_4 mb-3 tbdr"></div>
+            <div className="p_main_bottom_12  p_main_bottom_1 row m-0 mb-3">
                 <div className="col p-2">
                   <div className="p_mainbox1 p-3">
                     <div className="p_mainbox1_inner  h-100 " >
@@ -931,8 +931,23 @@ class Home
                 </div>
               </div>
             
-            <div className="p_main_botton_13mb-3 tbdr"></div>
-            <div className="p_main_botton_14 mb-3 tbdr"></div>
+            <div className="p_main_botton_13  p_main_bottom_4 mb-3 tbdr"></div>
+            <div className="p_main_botton_14 mb-3 pt-4  bg-white ">
+            <div className="d-flex justify-content-center border-bottom  border-top pb-4 ">
+              <ul class="nav flex-column">
+                <li class="nav-item mt-4">
+                  <span>See personalized recommendations</span>
+                </li>
+                <li class="nav-item">
+                 <button className="btn btn-sm amznbtn rounded-3 w-100">signin</button>
+                </li>
+                <li class="nav-item">
+                  <span className="float-start">new customer?</span>
+                  <a class="nav-link float-start p-0 ms-2" href="#">start here.</a>
+                </li>
+              </ul>
+            </div>
+            </div>
           </div>
         </div>
 

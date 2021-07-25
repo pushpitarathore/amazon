@@ -15,7 +15,7 @@ class SignIn extends Component {
         
                 <div className=" row m-0  justify-content-center signincont">
                     <div className="col-3  ">
-                    <a href="#" className="d-block mx-auto position-relative m-3 p_amzn_logo_box p_amznlogo amazonlogo   ">
+                    <a href="#" className="d-block mx-auto position-relative m-3 p_amzn_logo_box  amazonlogo   ">
                         <div className="position-absolute p_in_box  amazonlogo  "></div>
                     
                     </a>

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faChevronRight, faChevronUp, faCaretDown,  } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight, faChevronUp, faCaretDown, } from '@fortawesome/free-solid-svg-icons'
 import Flag from 'react-world-flags';
 import { Modal } from 'react-bootstrap';
 import Ember from '../assets/font/ember/AmazonEmber_Rg.ttf';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const myCustomFont = `
 @font-face{
   font-family:'emberRg';
@@ -47,7 +47,7 @@ class Header extends Component {
       this.setState({ x: ' ' })
     }
   }
- 
+
   componentDidMount() {
     //this method will be called when component is renderd
     window.addEventListener('scroll', this.handleScroll);
@@ -75,7 +75,7 @@ class Header extends Component {
     this.setState({ Allnavmenu: 'l366', Allnavclosebtn: 'd-none', overlay: 'p_invisible' });
   }
   render() {
-        return (
+    return (
       <React.Fragment>
         <style>
           {myCustomFont}
@@ -178,7 +178,7 @@ class Header extends Component {
 
         <header>
           <div className={'p_header_top p-1  w-100 ' + this.state.x}>
-            <button className="h-100 me-1  pe-0 mt-0 btn" style={{ 'width': '10%',fontSize:'14px' }}>
+            <button className="h-100 me-1  pe-0 mt-0 btn" style={{ 'width': '10%', fontSize: '14px' }}>
               <span className=" float-start me-0  pe-0 p_home_a_box  p_a_logo p_logo_position"></span>
               <span className="text-white float-start ps-0 pt-1 ">.in</span>
             </button>
@@ -189,10 +189,10 @@ class Header extends Component {
                 <span className="  float-start ps-0 pt-1" >Select your adderess</span>
               </span>
             </button>
-            <form className={'hform bg-white  d-inline-block ' + this.state.z} style={{ 'width': '47%',height:'44px' }}>
+            <form className={'hform bg-white  d-inline-block ' + this.state.z} style={{ 'width': '47%', height: '44px' }}>
               <div className="row m-0">
                 <div className="col-1 p-0 ">
-                  <div className="btn-group" role="group" style={{borderRadius:'9px'}}>
+                  <div className="btn-group" role="group" style={{ borderRadius: '9px' }}>
                     <button id="btnGroupDrop1" type="button" className="btn   bg-light  border-end mx-auto dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                       All
                     </button>
@@ -208,14 +208,14 @@ class Header extends Component {
                 </div>
                 <div className="col-1 p-0">
                   <button className="btn   mx-auto btn-warning w-100   hformsbmt " type="submit">
-                  <span className="d-block p_search_pos  p_a_logo "></span>
+                    <span className="d-block p_search_pos  p_a_logo "></span>
                   </button>
                 </div>
               </div>
             </form>
             <button onMouseOut={this.hideOverlay} onMouseOver={this.overlay} className="ms-1 p_ht_countrydd_btn h-100 p-0 btn position-relative d-inline-block " data-bs-toggle="modal" data-bs-target="#staticBackdrop2" style={{ 'width': '4%' }}>
               <span className="d-block p_flag_box flag_sheet mt-2 ms-2 mb-3 float-start"></span><span className="p-0 float-start text-white pt-3"><FontAwesomeIcon className=" pb-1 float-start text-white" icon={faCaretDown} /></span>
-             <div className="p_ht_countrydd p-3 text-start position-absolute bg-white border">
+              <div className="p_ht_countrydd p-3 text-start position-absolute bg-white border">
                 <div className="arrow-up  position-absolute p_aup_ht_countrydd"></div>
                 <div className="form-check">
                   <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked />
@@ -257,15 +257,15 @@ class Header extends Component {
                 </div>
               </div>
             </button>
-            <button onMouseOut={this.hideOverlay} onMouseOver={this.overlay} className="h-100 p_ht_signin_model_button me-1 btn text-white position-relative" style={{ 'width': '11%' ,fontSize:'13px'}}>
+            <button onMouseOut={this.hideOverlay} onMouseOver={this.overlay} className="h-100 p_ht_signin_model_button me-1 btn text-white position-relative" style={{ 'width': '11%', fontSize: '13px' }}>
               <div>Hello,Sign in</div>
               <span className="fw-bold">Account &amp; Lists<FontAwesomeIcon className="ms-2" icon={faCaretDown} /> </span>
 
               <div className=" p_ht_signin_model position-absolute bg-white border rounded-1 ">
                 <div className="arrow-up  position-absolute p_aup_ht_signin_model"></div>
                 <div>
-                  <Link  to="/signin" className=" btn btn-warning  w-50 mt-3 mb-1 ">Sign in</Link>
-                  <p className="text-dark border-bottom mb-4">New Coustmer?<Link  to="/register" className="btn btn-link " >Start here.</Link></p>
+                  <Link to="/signin" className=" btn btn-warning  w-50 mt-3 mb-1 ">Sign in</Link>
+                  <p className="text-dark border-bottom mb-4">New Coustmer?<Link to="/register" className="btn btn-link " >Start here.</Link></p>
                 </div>
                 <div className="row m-0  ">
                   <div className="col text-start ms-3 border-end ">
@@ -332,9 +332,9 @@ class Header extends Component {
                 </div>
               </div>
             </button>
-            <button className="h-100 me-1 btn text-white  " style={{ 'width': '7%',fontSize:'13px' }}>Return
+            <button className="h-100 me-1 btn text-white  " style={{ 'width': '7%', fontSize: '13px' }}>Return
               <div className="fw-bold">&amp; orders</div></button>
-            <Link to="/cart" className="h-100 me-1 ps-0 btn p-0   text-white fw-bold " style={{ 'width': '6%',fontSize:'13px' }}>
+            <Link to="/cart" className="h-100 me-1 ps-0 btn p-0   text-white fw-bold " style={{ 'width': '6%', fontSize: '13px' }}>
               <span className="d-block pe-0 float-start p_cartbox p_a_logo "></span>
               <span className="text-white float-start ps-0 pt-3">Cart</span>
             </Link>
@@ -376,12 +376,11 @@ class Header extends Component {
                 <a className="nav-link me-3  p-0  pt-1" href="#" >Computers</a>
               </li>
             </ul>
-            <ul className=" p-0 float-end m-0">
+            <ul className="p-0 float-end m-0">
               <li className="nav-item">
-                <a href="#" className="p-0 ">
+                <a href="#" className="p-0">
                   <img className="img-fluid" src="./images/slider/hbanner.jpg" />
                 </a>
-
               </li>
             </ul>
 

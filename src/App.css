@@ -9,16 +9,15 @@
  height: 30px;
  background-position: 214px -339px; 
 }
-.p_logo_position{
-  background-position: -8px -46px;
-}
 .p_home_a_box{
   width: 100px;
   height: 35px;
+  background-position: -8px -46px;
 }
 .p_amzn_logo_box{
   width: 105px;
   height: 36px;
+  background-position: -4px -128px !important; 
 }
 input:focus,button:focus{
   box-shadow: none !important;
@@ -27,9 +26,6 @@ input:focus,button:focus{
   border-bottom:2px solid orangered !important;
   background: transparent;
   color:#000;
-}
-.p_amznlogo{
-  background-position: -4px -128px !important; 
 }
 .p_in_box{
   width:16px ;
@@ -257,8 +253,7 @@ visibility: hidden;
   visibility: visible;
 }
 .p_main{
- min-height:5271px;
- background:#eaeded
+ min-height:5050px !important;
 }
 .p_main_top .carousel-control-prev ,.p_main_top .carousel-control-next{
   width:5% !important;
@@ -278,9 +273,7 @@ visibility: hidden;
   left:20px;
   width:97%; 
 }
-.p_main_bottom_1{
 
-}
 .p_main_bottom_1 > div{
 height:423px;
 }
@@ -309,9 +302,6 @@ background:#fff;
   }
 .p_mainbox1_inner a{
   text-decoration: none;  
-}
-.p_main_bottom_2 >div{
-  height:421px; 
 }
 .p_main_bottom_3{
   height:364px; 
@@ -350,9 +340,6 @@ background:#fff;
 #carouselExampleControls2 .carousel-control-next{
 box-shadow:-2px 0px 2px 2px rgba(0,0,0,0.3) ;
 }
-.p_main_bottom_4{
-  height: 287px;
-}
 .imgcont2{
   height:222px ;
 }
@@ -388,39 +375,11 @@ box-shadow:-2px 0px 2px 2px rgba(0,0,0,0.3) ;
   /*X  Y B  S  C */
 box-shadow:-2px 0px 2px 2px rgba(0,0,0,0.3) ;
 }
-.p_main_bottom_5{
-  height: 423px;
-}
-.p_main_bottom_6{
-  height: 287px;
-}
-.p_main_botton_7{
-  height:283px ;
-}
-.p_main_botton_8{
-  height:253px ;
-}
-.p_main_botton_9{
- height:423px ;
-}
-.p_main_botton_10{
-  height: 283px;
-}
-.p_main_botton_11{
-  height: 283px;
-}
-.p_main_botton_12{
-  height:423px ;
-}
-.p_main_botton_13{
-  height:150px ;
+.p_main_bottom_4{
+  height: 280px;
 }
 .p_main_botton_14{
-  height: 670px;
-  background: yellowgreen;
-}
-footer{
-  
+  height: 180px;
 }
 .p_footer_top a:hover{
   text-decoration: underline;
@@ -535,14 +494,9 @@ footer{
   /*background-image: linear-gradient(direction, color-stop1, color-stop2, ...);*/
   background-image:-webkit-linear-gradient(top,#ffffcc 0% ,#ffcc99 10%, #ffcc66 50%);
 }
-.signincont{
 
-}
 /*******************************Sign-In css end**************************************/
 /*******************************Search css end**************************************/
-.p_srch_main{
- 
-}
 .p_serch_filtertop{
   height:125px;
   box-shadow: 0px,0px,10px, 3px rgba(0,0,0,0.1);
@@ -605,9 +559,10 @@ background-position: -6px -489px;
 .srch_arrwbox{
   width: 15px;
   height: 19px;
+  background-position: -11px -52px;
 }
 .srch_arrow{
-  background-position: -11px -52px;
+  
 }
 .p_aside_star{
   height: 20px;
@@ -618,9 +573,7 @@ background-position: -6px -489px;
 .p_checkbox{
   height: 22px;
   width: 22px;
-}
-.p_check_dimension{
-background-position:-455px -142px ;
+  background-position:-455px -142px ;
 }
 .accordion-button:focus{
  border-color:#fff !important ;
@@ -638,24 +591,16 @@ background-position:-455px -142px ;
 .delivery > footer{
   height: 80px;
 }
-.p_delivery_main{
-  
-}
 .p_gradient{
   height: 44px;
   background-image:-webkit-linear-gradient(top,rgba(0,0,0,0.03),#fff)
 }
 /*******************************Delivery css end**************************************/
 /*******************************order history start**************************************/
-.p_odr_his_main{
-  
-}
 .p_bread_crumb{
   --bs-breadcrumb-divider: '>' 
 }
 /*******************************order history end**************************************/
 /*******************************Your Account start**************************************/
-.p_account_main{
-  
-}
+
 /*******************************Your Account end**************************************/
