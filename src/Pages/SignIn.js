@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../Component/Layout'
+import { Link } from 'react-router-dom'
 
 /**
 * @author
@@ -30,7 +31,7 @@ class SignIn extends Component {
                             <a style={{ fontSize: '13px' }} href="#">Need help?</a>
                         </form>
                         <hr/>
-                        <button className="btn-outline-light text-dark  btn btn-light w-100 border border-secondary mb-4">Create your Amazon Account</button>
+                        <Link to="/register" className="btn-outline-light text-dark  btn btn-light w-100 border border-secondary mb-4">Create your Amazon Account</Link>
                     </div>
                 </div>
                 <footer className="" style={{fontSize:'12px'}}>

@@ -28,7 +28,7 @@ class Register extends Component {
                 <label for="mobileno" class="form-label fw-bold">Mobile number</label>
                 <div class="col-4 pe-0">
 
-                  <input type="text" class="form-control form-control-sm bg-light "   />
+                  <input type="text" class="form-control form-control-sm bg-light " />
                 </div>
                 <div class="col-8">
                   <input type="text" class="form-control form-control-sm bg-light" id="mobileno" />
@@ -47,19 +47,35 @@ class Register extends Component {
                 Message and Data rates may apply.</p>
               <button className="btn amznbtn  btn-sm w-100">Continue</button>
 
-              <footer className="" style={{ fontSize: '14px' }}>
+              <div className="pb-2" style={{ fontSize: '13px' }}>
                 <div className="p_gradient  mt-4 pt-2">
                   <p className="m-1">Already have an account? <a href="#">Sign in</a></p>
                   <p className="m-1">Buying for work? <a href="#">Create a free business account</a></p>
                 </div>
 
-              </footer>
+              </div>
 
             </form>
 
           </div>
         </div>
+        <footer className="" style={{ fontSize: '12px' }}>
+          <div className="p_gradient  mt-4"></div>
+          <div className="mb-5">
+            <ul class="nav justify-content-center">
+              <li class="nav-item border-end me-2">
+                <a class="nav-link p-0 me-2 " href="#">Condition of Use</a>
+              </li>
+              <li class="nav-item border-end me-2 ">
+                <a class="nav-link p-0 me-2" href="#">Privecy otice</a>
+              </li>
+              <li class="nav-item">
+                <span className="">© 2012-2020, Amazon.com, Inc. and its affiliates</span>
+              </li>
 
+            </ul>
+          </div>
+        </footer>
       </>
     )
   }

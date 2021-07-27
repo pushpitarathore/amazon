@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
 /**
 * @author
@@ -38,7 +39,7 @@ class Delivery extends Component {
                                     <span className="d-block"> 458441</span>
                                     <span className="d-block">  India</span>
                                     <a href="#">Add delivery instructions</a>
-                                    <button className=" btn-sm btn w-100 mt-3 amznbtn mb-3">Delivery to this address</button>
+                                    <Link to="/deliveryoption" className="text-decoration-none btn-sm btn w-100 mt-3 amznbtn mb-3">Delivery to this address</Link>
                                     <div className="row m-0">
                                         <div className="col p-0">
                                             <button className="btn btn-light me-2 w-100 btn-light-sm p-0 border">Edit</button>

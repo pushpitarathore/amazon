@@ -15,6 +15,9 @@ import Delivery from './Pages/Delivery';
 import OrderHistory from './Pages/OrderHistory';
 import YourAccount from './Pages/YourAccount';
 import WishList from './Pages/WishList';
+import Delivery_option from './Pages/Delivery_option';
+import Review_your_odr from './Pages/Review_your_odr';
+import Payment_method from './Pages/Payment_method';
 
 
 
@@ -41,8 +44,11 @@ class App extends Component {
          <Route path="/register" component={Register}></Route>
         <Route path="/checkout" component={Checkout}></Route>
         <Route path="/delivery" component={Delivery}></Route>
-        <Route path="/youraccount" component={WishList}></Route>
+        <Route path="/wishlist" component={WishList}></Route>
         <Route path="/orderhistory" component={OrderHistory}></Route>
+        <Route path="/deliveryoption" component={Delivery_option}></Route>
+        <Route path="/revyourodr" component={Review_your_odr}></Route>
+        <Route path="/paymentmethod" component={Payment_method}></Route>
         
         
       </Router>

@@ -25,10 +25,10 @@ class Cart extends Component {
                                     <a href="#" className="p_anch_dec">Shop today's deals</a>
                                     <ul className="nav mt-3 ">
                                         <li className="nav-item">
-                                            <button className="btn btn-warning btn-sm rounded-3 ps-3 pe-3">Sign in to your account</button>
+                                            <Link to="/signin" className="btn btn-warning btn-sm rounded-3 ps-3 pe-3">Sign in to your account</Link>
                                         </li>
                                         <li className="nav-item">
-                                            <button className="btn  border-secondary btn-sm rounded-3 ps-3 pe-3 ms-3">Sign up now</button>
+                                            <Link to="/register" className="btn  border-secondary btn-sm rounded-3 ps-3 pe-3 ms-3">Sign up now</Link>
                                         </li>
 
                                     </ul>

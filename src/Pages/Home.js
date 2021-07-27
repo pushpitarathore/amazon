@@ -255,7 +255,7 @@ class Home
                 <div className="row ">
                   <div className="col-12  bg-white mb-3 p-3" style={{ 'height': 150 + 'px' }}>
                     <h4 className="p-2">Sign in for your best experience</h4>
-                    <button className="btn btn-warning w-100 rounded-1 border border-secondary">Sign in securely</button>
+                    <button className="btn btn-sm btn-warning w-100 rounded-1 border border-secondary">Sign in securely</button>
                   </div>
                   <div className="col-12 p-0  bg-white " style={{ 'height': 240 + 'px' }}>
                     <img className="img-fluid h-100 w-100" src="./images/main_images/13.jpg" />

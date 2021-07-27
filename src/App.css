@@ -492,7 +492,7 @@ box-shadow:-2px 0px 2px 2px rgba(0,0,0,0.3) ;
 /*******************************Sign-In css start**************************************/
 .amznbtn{
   /*background-image: linear-gradient(direction, color-stop1, color-stop2, ...);*/
-  background-image:-webkit-linear-gradient(top,#ffffcc 0% ,#ffcc99 10%, #ffcc66 50%);
+  background-image:-webkit-linear-gradient(top,#f4d383 0% ,#f2c964 10%, #f2c961 50%);
 }
 
 /*******************************Sign-In css end**************************************/
@@ -592,7 +592,7 @@ background-position: -6px -489px;
   height: 80px;
 }
 .p_gradient{
-  height: 44px;
+  height: 40px;
   background-image:-webkit-linear-gradient(top,rgba(0,0,0,0.03),#fff)
 }
 /*******************************Delivery css end**************************************/
@@ -604,3 +604,59 @@ background-position: -6px -489px;
 /*******************************Your Account start**************************************/
 
 /*******************************Your Account end**************************************/
+/*******************************  wishlist start**************************************/
+.p_wishlist_main{
+  height: 2000px;
+}
+.wishlist_cont{
+  height: 800px;
+}
+.wishlistcol{
+  height: 60px;
+  background: #EAEDED;
+}
+/******************************* wishlist end**************************************/
+/******************************* Delivery option start**************************************/
+.deliver_option{
+  height: 700px;
+}
+.do_continue_box{
+  height: 65px;
+  width: 250px;
+  background: #f7f7f7;
+}
+/*******************************Delivery option end**************************************/
+/******************************* Payment method start**************************************/
+.payment_method{
+  
+}
+.payment_spritesheet{
+background: url('https://images-eu.ssl-images-amazon.com/images/G/31/payments-portal/r1/issuer-images/sprite-map._CB443317321_.png');
+}
+.payment_sprite_box{
+  height: 27px;
+  width: 47px;
+}
+.p_visa{
+  background-position: 2px 0px;
+}
+.p_mastrcrd{
+  background-position: -45px 55px;
+}
+.p_thrd_sheet{
+  background-position: -89px 55px;
+}
+.p_forth_sheet{
+  background-position: -134px 55px;
+}
+.p_fifth_sheet{
+  background-position: -315px 55px;
+}
+.p_sixth_sheet{
+  background-position: -585px 55px;
+}
+.p_seventh_sheet{
+  background-position: -809px 55px;
+}
+
+/******************************* Payment method end**************************************/
