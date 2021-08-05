@@ -1,6 +1,11 @@
 .bgcolor{
   background: #eaeded !important;
 }
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
 .p_a_logo{
   background: url('https://images-eu.ssl-images-amazon.com/images/G/31/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936311_.png');
 }
@@ -575,11 +580,7 @@ background-position: -6px -489px;
   width: 22px;
   background-position:-455px -142px ;
 }
-.accordion-button:focus{
- border-color:#fff !important ;
- box-shadow: none !important;
- outline: #eaeded;
-}
+
 .p_emptycart{
   height: 246px;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../Component/Layout'
+import { Link } from 'react-router-dom'
 
 /**
 * @author
@@ -19,7 +20,7 @@ class YourAccount extends Component {
           <div className="container pb-4 " style={{ fontSize: '14px' }}>
             <h2>Your Account</h2>
             <div className="row m-0 mt-3  ">
-              <div className="col-4  p-4">
+              <div className="col-4  mt-2">
                 <a href="#" className="text-decoration-none text-dark ">
                   <div className="row m-0 border p-3 rounded-3">
                     <div className="col-3 p-0 ">
@@ -27,8 +28,8 @@ class YourAccount extends Component {
                     </div>
                     <div className="col-9  p-1">
 
-                      <h5 className="m-0">Your Orders</h5>
-                      <span>track,return or buy things again</span>
+                      <h5 className="m-0 mt-1 ">Your Orders</h5>
+                      <span >track,return or buy things again</span>
 
                     </div>
                   </div>
@@ -38,7 +39,7 @@ class YourAccount extends Component {
                 <a href="#" className="text-decoration-none text-dark">
                   <div className="row m-0 border  rounded-3 p-3">
                     <div className="col-3 p-0 ps-0">
-                      <img className="img-fluid tbdr" src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/sign-in-lock._CB485931504_.png" />
+                      <img className="img-fluid " src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/sign-in-lock._CB485931504_.png" />
                     </div>
                     <div className="col-9 p-0">
 
@@ -53,7 +54,7 @@ class YourAccount extends Component {
                 <a href="#" className="text-decoration-none text-dark">
                   <div className="row m-0 border rounded-3 p-3">
                     <div className="col-3 p-0 ">
-                      <img className="img-fluid tbdr" src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/rc_prime._CB485926807_.png" />
+                      <img className="img-fluid " src="https://images-na.ssl-images-amazon.com/images/G/31/x-locale/cs/ya/images/rc_prime._CB485926807_.png" />
                     </div>
                     <div className="col-9 p-0">
 
@@ -64,8 +65,8 @@ class YourAccount extends Component {
                   </div>
                 </a>
               </div>
-            </div>
-            <div className="row m-0  mb-3 border-bottom ">
+
+
               <div className="col-4 p-3 ">
                 <a href="#" className="text-decoration-none text-dark">
                   <div className="row m-0 border rounded-3 p-3">
@@ -113,7 +114,7 @@ class YourAccount extends Component {
               </div>
             </div>
             <div className="row m-0 pb-5">
-              <div className="col-4 border p-3 rounded-3">
+              <div className="col-4 border p-3 rounded-3 ">
                 <h6 className="fw-bold ">Digital content and devices</h6>
                 <ul className="nav flex-column">
                   <li className="nav-item">
@@ -233,22 +234,22 @@ class YourAccount extends Component {
                 </ul>
               </div>
             </div>
-           
+
           </div>
           <div className="d-flex justify-content-center pt-4 border-bottom  border-top pb-4 ">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <span>See personalized recommendations</span>
-                </li>
-                <li class="nav-item">
-                 <button className="btn btn-sm amznbtn w-100">signin</button>
-                </li>
-                <li class="nav-item">
-                  <span className="float-start">new customer?</span>
-                  <a class="nav-link float-start p-0 ms-2" href="#">start here.</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <span>See personalized recommendations</span>
+              </li>
+              <li class="nav-item">
+                <Link to="/signin" className="btn btn-sm amznbtn w-100">signin</Link>
+              </li>
+              <li class="nav-item">
+                <span className="float-start">new customer?</span>
+                <a class="nav-link float-start p-0 ms-2" href="#">start here.</a>
+              </li>
+            </ul>
+          </div>
 
         </div>
       </Layout>

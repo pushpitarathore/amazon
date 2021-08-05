@@ -21,10 +21,10 @@ class Payment_method extends Component {
             <div className="row m-0">
               <div className="col-9 border rounded-3">
                 <h6 className="border-bottom fw-bold p-2 pt-3">Another payment method</h6>
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion " id="accordionExample">
                   <div class="accordion-item border-0">
-                    <h6 class="accordion-header" id="flush-headingOne">
-                      <button class="border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h6 class="accordion-header" id="headingOne">
+                      <button class="border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         <div class="form-check">
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
                           <label class="form-check-label" for="flexRadioDefault1">
@@ -40,16 +40,106 @@ class Payment_method extends Component {
                         </div>
                       </button>
                     </h6>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                      <span className="d-block p-3">We’ll save this card for your convenience. Remove it by going to Your Account section.</span>
-                      < a className=" p-3" href="#" >
-                         <img className="img-fluid me-3" style={{ width: '20px' }} src="https://images-eu.ssl-images-amazon.com/images/G/01/payments-portal/r1/PlusIcon._CB485933946_.gif" />
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <span className="d-block p-3">We’ll save this card for your convenience. Remove it by going to Your Account section.</span>
+                        < a className=" p-3" href="#" >
+                          <img className="img-fluid me-3" style={{ width: '20px' }} src="https://images-eu.ssl-images-amazon.com/images/G/01/payments-portal/r1/PlusIcon._CB485933946_.gif" />
                           <img className="img-fluid  me-3" style={{ width: '30px' }} src="https://images-eu.ssl-images-amazon.com/images/G/01/payments-portal/r1/add-payment-method/card-logo-compact._CB478583243_.gif" />
-                         <a href="#">Add a credit or debit card</a>
-                        <span className="text-secondary ms-3 text-decoration-none">Amazon.com accepts all major credit &amp; cards</span>
-                      </a>
+                          <a href="#">Add a credit or debit card</a>
+                          <span className="text-secondary ms-3 text-decoration-none">Amazon.com accepts all major credit &amp; cards</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
+                  <div class="accordion-item border-0 mt-5">
+                    <h6 class="accordion-header" id="headingTwo">
+                      <button class="border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                          <label class="form-check-label " for="flexRadioDefault1">
+                            <span className="text-start d-block"> Net Banking</span>
+                            <select class="form-select form-select-sm bg-light w-75 mt-2" aria-label=".form-select-sm example">
+                              <option selected>choose an option</option>
+                              <option value="1">Aritle payments bank</option>
+                              <option value="1">Axis bank</option>
+                              <option value="2">ICICI bank </option>
+                              <option value="3">State bank of India</option>
+                              <option value="3">allahbad bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Andhra bank</option>
+                              <option value="3">Bank of baroda-corporative bank</option>
+                            </select>
+                          </label>
+                        </div>
+                      </button>
+                    </h6>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        For faster payment and instant refund, please use UPI<a href="#"> Why?</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border-0 mt-4">
+                    <h6 class="accordion-header" id="headingThree">
+                      <button class="border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            <span className="fw-bold">Other UPI Apps</span>
+                          </label>
+                        </div>
+                      </button>
+                    </h6>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body mb-3">
+                        <label for="yourname" class="form-label d-block">Please enter your UPI ID</label>
+                        <input type="email" class="form-control form-control-sm w-25 float-start me-3" id="yourname" placeholder="Ex:MobileNumber@UPI" />
+                        <button className="btn amznbtn border btn-sm float-start">verify</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check m-2 mt-4">
+                          <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled />
+                          <label class="form-check-label" for="flexRadioDisabled">
+                            <span>Disabled radio</span>
+                          </label>
+                          <a href="#">Why?</a>
+                        </div>
+                  <div class="accordion-item border-0 mt-4">
+                    <h6 class="accordion-header" id="headingFour">
+                      <button class="border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            <span className=" d-block text-start fw-bold"> Pay on Delivery</span>
+                            <p>Pay digitally with SMS Pay Link. Cash may not be accepted in COVID restricted areas.<a href="#">Know more.</a></p>
+                          </label>
+                        </div>
+                      </button>
+                    </h6>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
               <div className="col-3 pt-0 ">
